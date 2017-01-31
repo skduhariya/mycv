@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sandeep Kumar</title>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body ng-app="mycv" ng-strict-di>
+
+        <!-- Fixed position loading indicator -->
+        <loading class="loading-indicator"></loading>
+
+        <ui-view>
+            <div class="text-center initial-loading">
+                <h2>Loading ...</h2>
+            </div>
+        </ui-view>
+
+        <!-- Libs -->
+        <script src="lib/jquery-2.1.4.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
+
+        <!-- modules js  -->
+        <script src="src/mycv.module.js"></script>
+
+        <!--route js  -->
+        <script src="src/public/public.route.module.js" charset="utf-8"></script>
+        <script src="src/public/public.route.js"></script>
+        <script src="src/public/projects/project.controller.js"></script>
+        <script src="src/public/myCvService.js"></script>
+        <script src="src/public/projects/project.component.js"></script>
+
+
+        <script src="src/public/projects/project-view.controller.js"></script>
+        <script src="src/public/projects/project-view.component.js"></script>
+          
+    </body>
+
+</html>

@@ -1,0 +1,70 @@
+<section class="main-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="left-side">
+                    <div class="myPic">
+                        <img class="image-responsive" src="images/mypic.jpg"/>
+                    </div>
+                    <div class="myMenu">
+                        <ul>
+                            <li>
+                                <a ui-sref="public.about" ui-sref-active="active-tab">
+                                    <span class="pull-left glyphicon glyphicon-user"></span>
+                                    <span class="pull-right">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="public.projects" ui-sref-active="active-tab" id="projects">
+                                    <span class="pull-left glyphicon glyphicon-briefcase"></span>
+                                    <span class="pull-right">Projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="public.blogs" ui-sref-active="active-tab">
+                                    <span class="pull-left glyphicon glyphicon-comment"></span>
+                                    <span class="pull-right">Blogs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="public.contact" ui-sref-active="active-tab">
+                                    <span class="pull-left glyphicon glyphicon-earphone"></span>
+                                    <span class="pull-right">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mySocial">
+                          <ul>
+                            <li><a href="https://www.facebook.com/skduhariya" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/skduhariya" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://in.linkedin.com/in/skduhariya" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="copyright">
+                          copyright &copy; 2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="right-side">
+              <ui-view>
+
+              </ui-view>
+
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="heading"></div>
+
+                  </div>
+              </div>
+              <div class="row text-center" style="padding: 0px 6px;">
+                <div class="col-sm-12"><button class="cvbtn"><span class="glyphicon glyphicon-download"></span> Download My Cv</button></div>
+              </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
