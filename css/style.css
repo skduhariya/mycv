@@ -9,7 +9,7 @@ body {
 
 .myPic {
     overflow: hidden;
-    max-height: 225px;
+    min-height: 225px;
 }
 
 .main-section {
@@ -225,7 +225,8 @@ body {
     bottom: 0;
     width: 730px;
     padding: 6px 0px;
-    /*background: #eee;*/
+    text-align: justify;
+    line-height: 1.5;
     left: 20px;
 }
 
@@ -419,14 +420,228 @@ body {
     color: #607D8B;
 }
 
+.myMenu>ul li .glyphicon {
+    margin-top: 3px;
+}
+
+section.main-section {
+    width: 80%;
+}
+
 
 /*contact me end*/
 
-@media(min-width:992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     section.main-section {
         width: 85%;
     }
-    .right-side {
-        margin-left: -15px;
+    .exp>ul li div {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section.main-section {
+        width: 90%;
+    }
+    .myMenu {
+        width: 100%;
+    }
+    .myMenu>ul li {
+        display: inline-block;
+        width: 25%;
+        margin: -2px;
+    }
+    .myMenu>ul li:first-child {
+        margin-left: 0px;
+    }
+    .myMenu>ul li a {
+        width: 100%;
+        margin: 0px;
+        border-bottom: 0px;
+    }
+    .exp>ul li div {
+        width: 585px;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 767px) {
+    section.main-section {
+        width: 95%;
+    }
+    .myMenu>ul li:first-child {
+        margin-left: 0px;
+    }
+    .myMenu>ul li {
+        display: inline-block;
+        width: 25%;
+        margin: -2px;
+    }
+    .skill-title {
+        padding: 5px 25px;
+        text-align: center;
+        transform: inherit;
+        text-transform: uppercase;
+        top: 0;
+        border: 2px dashed #999;
+        width: 230px;
+        color: #999;
+        font-weight: bold;
+        font-size: inherit;
+        margin: 0 auto;
+        margin-top: 4px !important;
+    }
+    .exp>ul li div {
+        width: 498px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 649px) {
+    .menu-name {
+        display: none;
+    }
+    .myMenu>ul li {
+        display: inline-block;
+        width: 25%;
+        margin: -2px;
+        text-align: center;
+    }
+    .myMenu>ul li:first-child {
+        margin-left: 0px;
+    }
+    .myMenu>ul li a {
+        border-right: 1px solid #111;
+    }
+    .myMenu>ul li:last-child a {
+        border: none;
+    }
+    .myMenu>ul li a:hover, .myMenu>ul li a:active, .myMenu>ul li a:visited {
+        text-decoration: none;
+    }
+    .myMenu>ul li .glyphicon {
+        float: none !important;
+        display: block;
+        font-size: 19px;
+    }
+    .skill-title {
+        padding: 5px 25px;
+        text-align: center;
+        transform: inherit;
+        text-transform: uppercase;
+        top: 0;
+        border: 2px dashed #999;
+        width: 230px;
+        color: #999;
+        font-weight: bold;
+        font-size: inherit;
+        margin: 0 auto;
+        margin-top: 4px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .skill-title {
+        padding: 5px 25px;
+        text-align: center;
+        transform: inherit;
+        text-transform: uppercase;
+        top: 0;
+        border: 2px dashed #999;
+        width: 230px;
+        color: #999;
+        font-weight: bold;
+        font-size: inherit;
+        margin: 0 auto;
+        margin-top: 4px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 649px) {
+    .exp>ul li div {
+        max-width: 367px;
+    }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 599px) {
+    .exp>ul li div {
+        max-width: 340px;
+    }
+}
+
+@media only screen and (min-width: 545px) and (max-width: 569px) {
+    .exp>ul li div {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (min-width: 525px) and (max-width: 544px) {
+    .exp>ul li div {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 524px) {
+    .exp>ul li div {
+        max-width: 290px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 499px) {
+    .exp>ul li div {
+        max-width: 270px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 480px) {
+    .exp>ul li div {
+        max-width: 260px;
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 449px) {
+    .exp>ul li div {
+        max-width: 240px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 429px) {
+    .exp>ul li div {
+        max-width: 220px;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 409px) {
+    .exp>ul li div {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 379px) {
+    section.main-section {
+        width: 100%;
+    }
+    .exp>ul li div {
+        max-width: 250px;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 300px) and (max-width: 349px) {
+    section.main-section {
+        width: 100%;
+    }
+    .exp>ul li div {
+        width: 215px;
+    }
+}
+
+@media only screen and (max-width: 299px) {
+    section.main-section {
+        width: 100%;
+    }
+    .exp>ul li div {
+        width: 170px;
     }
 }
