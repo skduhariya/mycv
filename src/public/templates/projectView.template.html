@@ -1,61 +1,61 @@
 <div ng-repeat="item in $ctrl.items" class="margin-zero">
 
-  <p>
-    {{item.description}}
-  </p>
+    <p>
+        {{item.description}}
+    </p>
 
-<table class="table table-striped">
-  <tr>
-    <th>Project</th>
-    <td>{{item.name}}</td>
-  </tr>
-  <tr>
-    <th>Client</th>
-    <td>  {{item.client}}</td>
-  </tr>
-  <tr>
-    <th>Duration</th>
-    <td>  {{item.dur}}</td>
-  </tr>
-  <tr>
-    <th colspan="2">Technology Used</th>
-</tr><tr>
-    <th>Front-End</th>
-    <td>{{item.technologies.frontEnd}}</td>
-  </tr>
-  <tr>
-      <th>Back-End</th>
-      <td>{{item.technologies.backEnd}}
-    </td>
-  </tr>
+    <table class="table table-striped">
+        <tr>
+            <th>Project</th>
+            <td>{{item.name}}</td>
+        </tr>
+        <tr>
+            <th>Client</th>
+            <td>
+                {{item.client}}</td>
+        </tr>
+        <tr>
+            <th>Duration</th>
+            <td>
+                {{item.dur}}</td>
+        </tr>
+        <tr>
+            <th colspan="2">Technology Used</th>
+        </tr>
+        <tr>
+            <th>Front-End</th>
+            <td>{{item.technologies.frontEnd}}</td>
+        </tr>
+        <tr>
+            <th>Back-End</th>
+            <td>{{item.technologies.backEnd}}
+            </td>
+        </tr>
 
-  <tr>
-    <th>Database</th>
-    <td>{{item.technologies.database}}</td>
-  </tr>
-  <tr>
-    <th colspan="2">Responsibilities</th></tr>
-    <tr>
-    <td colspan="2">
-      <p>{{item.responsibility.res1}}</p>
-      <p>{{item.responsibility.res2}}</p>
-      <p>{{item.responsibility.res3}}</p>
-      <p>{{item.responsibility.res4}}</p>
-      <p>{{item.responsibility.res5}}</p>
-    </td>
-  </tr>
-</table>
-
-
-
+        <tr>
+            <th>Database</th>
+            <td>{{item.technologies.database}}</td>
+        </tr>
+        <tr>
+            <th colspan="2">Responsibilities</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>{{item.responsibility.res1}}</p>
+                <p>{{item.responsibility.res2}}</p>
+                <p>{{item.responsibility.res3}}</p>
+                <p>{{item.responsibility.res4}}</p>
+                <p>{{item.responsibility.res5}}</p>
+            </td>
+        </tr>
+    </table>
 
 </div>
 <script>
-var url = window.location.href;
-//alert("url: "+url.indexOf('projects'));
-if(url.indexOf('projects') > -1){
- // alert("inside 34");
-  $("#projects").addClass('active-tab');
-}
-
+    var url = window.location.href;
+    //alert("url: "+url.indexOf('projects'));
+    if (url.indexOf('projects') > -1) {
+        // alert("inside 34");
+        $("#projects").addClass('active-tab');
+    }
 </script>
