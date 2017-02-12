@@ -425,7 +425,7 @@ body {
 }
 
 section.main-section {
-    width: 80%;
+    width: 85%;
 }
 
 
@@ -462,6 +462,15 @@ section.main-section {
     }
     .exp>ul li div {
         width: 585px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contactIcons {
+        display: none;
+    }
+    .info-add {
+        margin: 20px 0 0px;
     }
 }
 
