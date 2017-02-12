@@ -18,10 +18,14 @@
     <td>  {{item.dur}}</td>
   </tr>
   <tr>
-    <th>Technology Used</th>
-
-    <td><b>Front-End: </b>{{item.technologies.frontEnd}}<br/>
-      <b>Back-End: </b>{{item.technologies.backEnd}}
+    <th colspan="2">Technology Used</th>
+</tr><tr>
+    <th>Front-End</th>
+    <td>{{item.technologies.frontEnd}}</td>
+  </tr>
+  <tr>
+      <th>Back-End</th>
+      <td>{{item.technologies.backEnd}}
     </td>
   </tr>
 
@@ -30,8 +34,9 @@
     <td>{{item.technologies.database}}</td>
   </tr>
   <tr>
-    <th>Responsibilities</th>
-    <td>
+    <th colspan="2">Responsibilities</th></tr>
+    <tr>
+    <td colspan="2">
       <p>{{item.responsibility.res1}}</p>
       <p>{{item.responsibility.res2}}</p>
       <p>{{item.responsibility.res3}}</p>
