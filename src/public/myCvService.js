@@ -56,6 +56,28 @@
 
         });
         projectList.push({
+            shortName: "GlobalKnowledge-tech",
+            name: "Global Knowledge Tech",
+            img: 'images/4.jpg',
+            client: "Global Knowledge",
+            shortDesc: "A Training portal that provide a vivid & complete Training about the IBM Technologies",
+            dur: "3 months",
+            description: "Global Knowledge is the world's leading learning services and professional development solutions provider. Global Knowledge deliver learning solutions to support customers as they adapt to key business transformations and technological advancements that drive the way that organizations around the world differentiate themselves and thrive. Global Knowledge learning programs, whether designed for a global organization or an individual professional, help businesses close skills gaps and foster an environment of continuous talent development.",
+            technologies: {
+                frontEnd: "HTML5, CSS3, JavaScript, jQuery, Bootstrap 3.0",
+                backEnd: "Core Java, J2EE",
+                database: "My SQL"
+            },
+            responsibility: {
+                res1: "Co-ordinated with the client and documented all the requirements regarding the project.",
+                res2: "Worked on Design part",
+                res3: "Design and development of role based work flow of the project.",
+                res4: "",
+                res5: ""
+            }
+
+        });
+        projectList.push({
             shortName: "JECRC-Portal",
             name: "JECRC Portal",
             img: 'images/3.jpg',
@@ -64,14 +86,14 @@
             dur: "5 months",
             description: "This application was developed by using Cordova. This app mainly comprises of providing complete education solutions for corporations and government organizations that need to train their staff on the latest business skills and Information Technology tools, methodologies and languages. Users can test their skills by giving mock tests provided by the app and this app works in offline also.",
             technologies: {
-                frontEnd: "HTML5, CSS3, JavaScript, AngularJS, jQuery, Bootstrap 3.0",
-                backEnd: "Cordova API",
-                database: "SQL Lite"
+                frontEnd: "HTML5, CSS3, JavaScript, jQuery, Bootstrap 3.0",
+                backEnd: "Core Java, J2EE",
+                database: "My SQL"
             },
             responsibility: {
                 res1: "Co-ordinated with the client and documented all the requirements regarding the project.",
                 res2: "Worked on Design part",
-                res3: "Worked on many Cordova API,s to access native features of Phone",
+                res3: "Design and development of role based work flow of the project.",
                 res4: "",
                 res5: ""
             }
