@@ -4,3 +4,11 @@
   <p>{{item.defination}}</p>
 
 </div>
+<script>
+    var url = window.location.href;
+    //alert("url: "+url.indexOf('blogs'));
+    if (url.indexOf('projects') > -1) {
+        // alert("inside 34");
+        $("#blogs").addClass('active-tab');
+    }
+</script>
