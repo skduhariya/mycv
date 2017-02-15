@@ -10,6 +10,7 @@
 
         var service = this;
         var projectList = [];
+        var blogList = [];
 
         projectList.push({
             shortName: "Customer-Portal",
@@ -99,6 +100,34 @@
             }
 
         });
+        blogList.push({
+            shortName: 'JS-clouser',
+            img: 'images/3.jpg',
+            topic: 'JS Clouser',
+            smalInfo: 'Understand JavaScript Closures',
+            ques: 'What is a closure?',
+            defination: 'A closure is an inner function that has access to the outer (enclosing) function’s variables - scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.',
+            technology: 'JS',
+            infoPart1: '',
+            infoPart2: '',
+            expample1: '',
+            infoPart3: '',
+            infoPart4: '',
+            infoPart5: '',
+            summary: {
+                heading: 'Summary of JavaScript Clouser',
+                points: [{
+                    point: '1',
+                    info: 'Whenever you use function inside another function, a clouser is used.'
+                }, {
+                    point: '2',
+                    info: 'When ever you use  eval()  inside function, a clouser is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
+                }, {
+                    point: '3',
+                    info: '......'
+                }]
+            }
+        });
 
         service.getProjectList = function() {
             var deferred = $q.defer();
@@ -108,25 +137,36 @@
         };
         service.getProjectDetails = function(pname) {
             var deferred = $q.defer();
-            console.log("pname: " + pname);
-            //  console.log("c: " + JSON.stringify(projectList));
-            console.log("projectList[0].shortName: " + projectList[0].shortName);
-            console.log("result: " + projectList[0].shortName == pname);
-
             var result = $filter('filter')(projectList, {
                 shortName: pname
             });
-            console.log("Resulltt : >> " + JSON.stringify(result));
+            //  console.log("Resulltt : >> " + JSON.stringify(result));
 
             return result;
-            // var dataRes = projectList[0].$filter(function(i) {
-            //     console.log("inside compare...");
-            //     return i.shortName === pname;
-            // });
-            // console.log("dataRes: " + JSON.stringify(dataRes));
-            // deferred.resolve(dataRes);
 
-            // return deferred.promise;
-        }
+        };
+
+        service.getBlogList = function() {
+
+            var deferred = $q.defer();
+            deferred.resolve(blogList);
+
+            return deferred.promise;
+
+        };
+        service.getblogsDetails = function(bname) {
+            var deferred = $q.defer();
+            //    console.log("bname: " + bname);
+            //  console.log("c: " + JSON.stringify(projectList));
+            //  console.log("blogList[0].shortName: " + blogList[0].shortName);
+            //  console.log("result: " + blogList[0].shortName == bname);
+
+            var result = $filter('filter')(blogList, {
+                shortName: bname
+            });
+            //  console.log("Resulltt blog : >> " + JSON.stringify(result));
+
+            return result;
+        };
     }
 })();

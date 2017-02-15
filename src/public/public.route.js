@@ -19,7 +19,8 @@
             controller: 'projectCtrl as pjctrl'
         }).state('public.blogs', {
             url: '/blogs',
-            templateUrl: 'src/public/blogs/blogs.html'
+            templateUrl: 'src/public/blogs/blogs.html',
+            controller: 'blogCtrl as blgctrl'
         }).state('public.contact', {
             url: '/contact',
             templateUrl: 'src/public/contact/contact.html'
@@ -30,11 +31,22 @@
             controllerAs: 'pdCtrl',
             resolve: {
                 projectDetail: ['$stateParams', 'myCvService', function($stateParams, myCvService) {
-                    console.log("inside state resolve" + $stateParams);
+                    //  console.log("inside state resolve" + $stateParams);
                     return myCvService.getProjectDetails($stateParams.pName);
                 }]
             }
-        });
+        }).state('public.blog', { //public.blogs
+            url: '/blogs/{bName}',
+            templateUrl: 'src/public/blogs/blog-view.html',
+            controller: 'blogDetailController',
+            controllerAs: 'bdCtrl',
+            resolve: {
+                blogDetail: ['$stateParams', 'myCvService', function($stateParams, myCvService) {
+                    //  console.log("inside state resolve blog" + $stateParams);
+                    return myCvService.getblogsDetails($stateParams.bName);
+                }]
+            }
+        });;
 
     };
 })();

@@ -1,0 +1,13 @@
+<div class="col-sm-4" ng-repeat="item in $ctrl.items">
+    <div class="projects">
+        <img ng-src="{{item.img}}" alt="Avatar" class="image">
+
+        <a ui-sref="public.blog({bName: item.shortName})" class="overlay">
+            <div class="text">
+              <h4>{{item.topic}}</h4>
+              <p>{{item.smalInfo}}</p>
+            </div>
+
+        </a>
+    </div>
+</div>
