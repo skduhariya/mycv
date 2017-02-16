@@ -15,6 +15,7 @@ code {
     background-color: #f9f2f4;
     border-radius: 4px;
     display: block;
+    margin-bottom:10px;
 }
 body {
     background: #ccc;
