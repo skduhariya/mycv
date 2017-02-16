@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
 }
-
+.tab-space{
+    display:block;
+    width:20px;
+}
 body {
     background: #ccc;
     font: 14px/22px "open_sans", Arial, sans-serif;
