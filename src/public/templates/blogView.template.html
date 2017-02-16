@@ -6,12 +6,12 @@
   <p> {{item.infoPart2}}</p>
   
   <code>{{item.examples[0].example1.line1}} 
-    <br/><span class="tab-space"></span>{{item.examples[0].example1.line2}}
-    <br/><span class="tab-space"></span>{{item.examples[0].example1.line3}}
-    <br/><span class="tab-space"></span><span class="tab-space"></span>{{item.examples[0].example1.line4}}
-    <br/><span class="tab-space"></span>{{item.examples[0].example1.line5}}
-    <br/><span class="tab-space"></span>{{item.examples[0].example1.line6}}
-    <br/>{{item.examples[0].example1.line7}}
+    <span class="tab-space">{{item.examples[0].example1.line2}}</span>
+    <span class="tab-space">{{item.examples[0].example1.line3}}</span>
+    <span class="tab-space"><span class="tab-space"></span>{{item.examples[0].example1.line4}}</span>
+    <span class="tab-space">{{item.examples[0].example1.line5}}</span>
+    <span class="tab-space">{{item.examples[0].example1.line6}}</span>
+    {{item.examples[0].example1.line7}}
 </code>
 <script>
     var url = window.location.href;
