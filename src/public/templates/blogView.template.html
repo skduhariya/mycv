@@ -17,6 +17,11 @@
   <p> {{item.infoPart3}}</p>
   <p> {{item.infoPart4}}</p>
   <p> {{item.infoPart5}}</p>
+  <h3>{{item.summary.heading}}</h3>
+  {{item.summary.points}}
+  <p ng-repeat = 'point in item.summary.points'>
+    <b>{{point.point}}</b>. {{point.info}}
+  </p>
 <script>
     var url = window.location.href;
     //alert("url: "+url.indexOf('blogs'));
