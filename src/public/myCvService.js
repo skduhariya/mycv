@@ -144,7 +144,19 @@
                     info: 'When ever you use  eval()  inside function, a closure is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
                 }, {
                     point: '3',
-                    info: '......'
+                    info: 'When you use Function() inside a function, it does not create a closure. (The new function cannot reference the local variables of the function calling Function()).'
+                },{
+                    point: '4',
+                    info: 'A closure in JavaScript is like keeping a copy of the all the local variables, just as they were when a function exited.'
+                },{
+                    point: '5',
+                    info: 'It is probably best to think that a closure is always created just on entry to a function, and the local variables are added to that closure.'
+                },{
+                    point: '6',
+                    info: 'If you are trying to do any dynamic source code modifications ( for example: myFunction = Function(myFunction.toString().replace(/Hello/,\'Hola\')); ), it won\'t work if myFunction is a closure (Of course, you would never even think of doing source code string substitution at runtime, but...).'
+                },{
+                    point:'7',
+                    info:'It is possible to get function declarations within function declarations within functions - and you can get closures at more than one level.'
                 }]
             }
         });
