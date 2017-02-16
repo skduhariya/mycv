@@ -101,7 +101,7 @@
 
         });
         blogList.push({
-            shortName: 'JS-closure',
+            shortName: 'JS-Closure',
             img: 'images/3.jpg',
             topic: 'JS Closure',
             smalInfo: 'Understand JavaScript Closure',
