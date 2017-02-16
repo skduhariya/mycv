@@ -101,15 +101,15 @@
 
         });
         blogList.push({
-            shortName: 'JS-Clouser',
+            shortName: 'JS-closure',
             img: 'images/3.jpg',
-            topic: 'JS Clouser',
-            smalInfo: 'Understand JavaScript Closures',
+            topic: 'JS Closure',
+            smalInfo: 'Understand JavaScript Closure',
             technology: 'JS',
             ques: 'What is a closure?',
             defination: 'A closure is an inner function that has access to the outer (enclosing) function’s variables - scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.',
-            infoPart1: 'A clouser is a local variable for a function kept alive after the function has returned, or',
-            infoPart2: 'A clouser is a stack - frame which is not deallocated. for example',
+            infoPart1: 'A closure is a local variable for a function kept alive after the function has returned, or',
+            infoPart2: 'A closure is a stack - frame which is not deallocated. for example',
             examples: [{
                 example1:{
                 line1: 'function sayHello(name){',
@@ -118,7 +118,8 @@
                 line4: 'alert(text);' ,
                 line5: '}',
                 line6:'return printName;',
-                line7: '}'
+                line7: '}',
+                line8:'var say = sayHello(\'sandy\'); say();'    
                 },
                 example2:{
                 line1: 'function sayHello(name){',
@@ -134,13 +135,13 @@
             infoPart4: '',
             infoPart5: '',
             summary: {
-                heading: 'Summary of JavaScript Clouser',
+                heading: 'Summary of JavaScript closure',
                 points: [{
                     point: '1',
-                    info: 'Whenever you use function inside another function, a clouser is used.'
+                    info: 'Whenever you use function inside another function, a closure is used.'
                 }, {
                     point: '2',
-                    info: 'When ever you use  eval()  inside function, a clouser is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
+                    info: 'When ever you use  eval()  inside function, a closure is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
                 }, {
                     point: '3',
                     info: '......'
