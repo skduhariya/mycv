@@ -110,7 +110,7 @@
             defination: 'A closure is an inner function that has access to the outer (enclosing) function’s variables - scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.',
             infoPart1: 'A clouser is a local variable for a function kept alive after the function has returned, or',
             infoPart2: 'A clouser is a stack - frame which is not deallocated. for example',
-            expamples: [{
+            examples: [{
                 example1:{
                 line1: 'function sayHello(name){',
                 line2: 'var text = \'Hello \' + name; // local variable' ,
