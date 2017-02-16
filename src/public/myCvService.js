@@ -131,9 +131,9 @@
                 line7: '}'
                 }
             }],
-            infoPart3: '',
-            infoPart4: '',
-            infoPart5: '',
+            infoPart3: 'The above code has a closure because the anonymous function \'function() {alert(text);}\' is declare inside another function, sayHello() in this Example. In javascript, if you use the function keyword inside another function, you are creating a closure.',
+            infoPart4: 'In C, and most other common languages after a function returns, all the local variables are no longer accessible because the stack-frame is destroyed. ',
+            infoPart5: 'In JavaScript, if you declare a function within another function, then the local variables can remain accessible after returning from the function you called. This is demonstrated above, because we call the function say(); after we have returned from sayHello(). Notice that the code that we call references the variable text, which was a local variable of the function sayHello().',
             summary: {
                 heading: 'Summary of JavaScript closure',
                 points: [{
