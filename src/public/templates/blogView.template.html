@@ -22,6 +22,7 @@
   <p ng-repeat = 'point in item.summary.points'>
     <b>{{point.point}}</b>. {{point.info}}
   </p>
+  <p class="pull-right">for more details <a href="{{item.reference}}" target="_blank">click here</a>
 <script>
     var url = window.location.href;
     //alert("url: "+url.indexOf('blogs'));
