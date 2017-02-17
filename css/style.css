@@ -8,6 +8,9 @@ p{
     display:block;
     margin-left:30px;
 }
+.blog-date{
+    color:#ddd;
+}
 code {
     padding: 4px 18px;
     font-size: 90%;
