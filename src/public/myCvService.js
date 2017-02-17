@@ -159,7 +159,8 @@
                     point:'7',
                     info:'It is possible to get function declarations within function declarations within functions - and you can get closures at more than one level.'
                 }]
-            }
+            },
+            reference:'http://www.javascriptkit.com/javatutors/closures3.shtml'
         });
 
         service.getProjectList = function() {
