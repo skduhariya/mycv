@@ -9,7 +9,11 @@ p{
     margin-left:30px;
 }
 .blog-date{
-    color:#ddd;
+    color: #607D8B;
+    margin-top: -10px;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 4px;
 }
 code {
     padding: 4px 18px;
