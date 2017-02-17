@@ -102,6 +102,7 @@
         });
         blogList.push({
             shortName: 'JS-Closure',
+            date:'Feb 17, 2017',
             img: 'images/3.jpg',
             topic: 'JS Closure',
             smalInfo: 'Understand JavaScript Closure',
