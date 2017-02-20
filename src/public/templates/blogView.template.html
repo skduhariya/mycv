@@ -4,25 +4,27 @@
   <small class="blog-date">{{item.date}}</small>
   <p>{{item.defination}}</p>
   <p> {{item.infoPart1}}</p>
+  <div>{{item.infoTopic.topics | json }}</div>
+  <div ng-repeat = "topics in item.infoTopic.topics"> 
+    <h4>{{topic.name}}</h4>
+    <p ng-repeat="point in  topic.points">
+      {{point.info}}
+    </p>
+    <code ng-repeat="example in topics.example">
+      <span class="tab-space">{{example.lineno}} &nbsp; &nbsp; {{example.data}}</span>
+      
+    </code>
+  </div>
+  
+  
+ 
   <p> {{item.infoPart2}}</p>
   
-  <code>{{item.examples[0].example1.line1}} 
-    <span class="tab-space">{{item.examples[0].example1.line2}}</span>
-    <span class="tab-space">{{item.examples[0].example1.line3}}</span>
-    <span class="tab-space"><span class="tab-space">{{item.examples[0].example1.line4}}</span></span>
-    <span class="tab-space">{{item.examples[0].example1.line5}}</span>
-    <span class="tab-space">{{item.examples[0].example1.line6}}</span>
-    {{item.examples[0].example1.line7}}<br/>
-    <p>{{item.examples[0].example1.line8}}</p>
-</code>
-  <p> {{item.infoPart3}}</p>
-  <p> {{item.infoPart4}}</p>
-  <p> {{item.infoPart5}}</p>
   <h3>{{item.summary.heading}}</h3>
   <p ng-repeat = 'point in item.summary.points'>
     <b>{{point.point}}</b>. {{point.info}}
   </p>
-  <p class="pull-right">for more details <a href="{{item.reference}}" target="_blank">click here</a>
+  
 <script>
     var url = window.location.href;
     //alert("url: "+url.indexOf('blogs'));
