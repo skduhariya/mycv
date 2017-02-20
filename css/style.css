@@ -6,7 +6,7 @@ p{
 }
 .tab-space{
     display:block;
-    margin-left:30px;
+    word-wrap: break-word;
 }
 .blog-date{
     color: #607D8B;
