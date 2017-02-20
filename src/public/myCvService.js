@@ -288,7 +288,7 @@
 										info:'.config function is a special function that you can invoke on the module instance that is guaranteed to run before any services, factories, or controller are even created. Which means that\'s a step for us to be able to tap into configure these services before they are ever created.'
 									},
 									{
-										info:\'let\'s see bellow example, we have created a provider using .provider method in which we are returning an object having function "sayHello" to the $get function.'
+										info:'let\'s see bellow example, we have created a provider using .provider method in which we are returning an object having function "sayHello" to the $get function.'
 									}
 								  ],
 							example:[
