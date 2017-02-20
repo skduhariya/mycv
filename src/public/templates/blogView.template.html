@@ -5,14 +5,14 @@
   <p>{{item.defination}}</p>
   <p> {{item.infoPart1}}</p>
   
-  <div>{{item.infoTopic.topics | json}}</div>
+  
   <div ng-repeat = "topics in item.infoTopic.topics"> 
-    <h4>{{topic.name}}</h4>
-    <p ng-repeat="point in  topic.points">
+    <h4>{{topics.name}}</h4>
+    <p ng-repeat="point in  topics.points">
       {{point.info}}
     </p>
-    <code ng-repeat="example in topics.example">
-      <span class="tab-space">{{example.lineno}} &nbsp; &nbsp; {{example.data}}</span>
+    <code >
+      <span class="tab-space" ng-repeat="example in topics.example">{{example.lineno}} &nbsp; &nbsp; {{example.data}}</span>
       
     </code>
   </div>
