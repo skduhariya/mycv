@@ -114,11 +114,11 @@
                 topics:[{
                     name:'Service',
                     points:[	
-								{info:'The module instance in angular has another method called service. and just like a controller, its take the name of the service and the function of value that is to be the function used to create that service.' },
-								{info:'The Service angularjs will create for us using this method is guaranteed to be a singleton(Restrict object to be always having a single instance).that\'s why services are very convenient for sharing data across our application. ' },
-								{info:'There\'s another property of a service that we need to know about and that is lazily Instansiated(Only created if an application component declares it as a dependency). '},
-								{info:'When we are using Service, it\'s instantiated with the \'new\' keyword. Because of that, we will add properties to \'this\' and the service will return \'this\'. When we pass the service into our controller, those properties on ‘this’ will now be available on that controller through our service.'}
-							],
+			    {info:'The module instance in angular has another method called service. and just like a controller, its take the name of the service and the function of value that is to be the function used to create that service.' },
+			    {info:'The Service angularjs will create for us using this method is guaranteed to be a singleton(Restrict object to be always having a single instance).that\'s why services are very convenient for sharing data across our application. ' },
+			    {info:'There\'s another property of a service that we need to know about and that is lazily Instansiated(Only created if an application component declares it as a dependency). '},
+			    {info:'When we are using Service, it\'s instantiated with the \'new\' keyword. Because of that, we will add properties to \'this\' and the service will return \'this\'. When we pass the service into our controller, those properties on ‘this’ will now be available on that controller through our service.'}
+			 ],
                     example:[
 								{
 									lineno:'1',
