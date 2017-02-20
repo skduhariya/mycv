@@ -4,7 +4,7 @@
   <small class="blog-date">{{item.date}}</small>
   <p>{{item.defination}}</p>
   <p> {{item.infoPart1}}</p>
-  <div>{{item.infoTopic.topics | json }}</div>
+  
   <div ng-repeat = "topics in item.infoTopic.topics"> 
     <h4>{{topic.name}}</h4>
     <p ng-repeat="point in  topic.points">
