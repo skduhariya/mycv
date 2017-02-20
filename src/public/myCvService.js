@@ -101,67 +101,6 @@
 
         });
         blogList.push({
-            shortName: 'JS-Closure',
-            date:'Feb 17, 2017',
-            img: 'images/3.jpg',
-            topic: 'JS Closure',
-            smalInfo: 'Understand JavaScript Closure',
-            technology: 'JS',
-            ques: 'What is a closure?',
-            defination: 'A closure is an inner function that has access to the outer (enclosing) function’s variables - scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.',
-            infoPart1: 'A closure is a local variable for a function kept alive after the function has returned, or',
-            infoPart2: 'A closure is a stack - frame which is not deallocated. for example',
-            examples: [{
-                example1:{
-                line1: 'function sayHello(name){',
-                line2: 'var text = \'Hello \' + name; // local variable' ,
-                line3: 'var printName = function(){',
-                line4: 'alert(text);' ,
-                line5: '}',
-                line6:'return printName;',
-                line7: '}',
-                line8:'var say = sayHello(\'sandy\'); say();'    
-                },
-                example2:{
-                line1: 'function sayHello(name){',
-                line2: 'var text = \'Hello \' + name; // local variable' ,
-                line3: 'var printName = function(){',
-                line4: 'alert(text);' ,
-                line5: '}',
-                line6:'return printName;',
-                line7: '}'
-                }
-            }],
-            infoPart3: 'The above code has a closure because the anonymous function \'function() {alert(text);}\' is declare inside another function, sayHello() in this Example. In javascript, if you use the function keyword inside another function, you are creating a closure.',
-            infoPart4: 'In C, and most other common languages after a function returns, all the local variables are no longer accessible because the stack-frame is destroyed. ',
-            infoPart5: 'In JavaScript, if you declare a function within another function, then the local variables can remain accessible after returning from the function you called. This is demonstrated above, because we call the function say(); after we have returned from sayHello(). Notice that the code that we call references the variable text, which was a local variable of the function sayHello().',
-            summary: {
-                heading: 'Summary of JavaScript closure',
-                points: [{
-                    point: '1',
-                    info: 'Whenever you use function inside another function, a closure is used.'
-                }, {
-                    point: '2',
-                    info: 'When ever you use  eval()  inside function, a closure is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
-                }, {
-                    point: '3',
-                    info: 'When you use Function() inside a function, it does not create a closure. (The new function cannot reference the local variables of the function calling Function()).'
-                },{
-                    point: '4',
-                    info: 'A closure in JavaScript is like keeping a copy of the all the local variables, just as they were when a function exited.'
-                },{
-                    point: '5',
-                    info: 'It is probably best to think that a closure is always created just on entry to a function, and the local variables are added to that closure.'
-                },{
-                    point: '6',
-                    info: 'If you are trying to do any dynamic source code modifications ( for example: myFunction = Function(myFunction.toString().replace(/Hello/,\'Hola\')); ), it won\'t work if myFunction is a closure (Of course, you would never even think of doing source code string substitution at runtime, but...).'
-                },{
-                    point:'7',
-                    info:'It is possible to get function declarations within function declarations within functions - and you can get closures at more than one level.'
-                }]
-            }
-        });
-        blogList.push({
             shortName: 'Angular-modules',
             date:'Feb 20, 2017',
             img: 'images/1.jpg',
@@ -174,220 +113,310 @@
             infoTopic:{
                 topics:[{
                     name:'Service',
-                    points:[
-                        {
-                            info:'The module instance in angular has another method called service. and just like a controller, its take the name of the service and the function of value that is to be the function used to create that service.' 
-                        },
-                        {
-                            info:'The Service angularjs will create for us using this method is guaranteed to be a singleton(Restrict object to be always having a single instance).that\'s why services are very convenient for sharing data across our application. ' 
-                        },
-                         {
-                            info:'There\'s another property of a service that we need to know about and that is lazily Instansiated(Only created if an application component declares it as a dependency). ' 
-                        },
-                        {
-                            info:'When we are using Service, it\'s instantiated with the \'new\' keyword. Because of that, we will add properties to \'this\' and the service will return \'this\'. When we pass the service into our controller, those properties on ‘this’ will now be available on that controller through our service.'
-                        }],
+                    points:[	
+								{info:'The module instance in angular has another method called service. and just like a controller, its take the name of the service and the function of value that is to be the function used to create that service.' },
+								{info:'The Service angularjs will create for us using this method is guaranteed to be a singleton(Restrict object to be always having a single instance).that\'s why services are very convenient for sharing data across our application. ' },
+								{info:'There\'s another property of a service that we need to know about and that is lazily Instansiated(Only created if an application component declares it as a dependency). '},
+								{info:'When we are using Service, it\'s instantiated with the \'new\' keyword. Because of that, we will add properties to \'this\' and the service will return \'this\'. When we pass the service into our controller, those properties on ‘this’ will now be available on that controller through our service.'}
+							],
                     example:[
-                        {
-                            lineno:'1',
-                            data:'var app = angular.module("app", []);',
-                        },
-                        {
-                            lineno:'2',
-                            data:'app.controller("serviceCtrl",serviceCtrl);',
-                        },
-                        {
-                            lineno:'3',
-                            data:'function serviceCtrl($scope, myService){// service function call',
-                        },
-                        {
-                            lineno:'4',
-                            data:' $scope.ServiceOutput = "Service Output";',
-                        },
-                        {
-                           lineno:'5',
-                            data:' $scope.HelloService = function () {', 
-                        },
-                         {
-                           lineno:'6',
-                            data:' $scope.ServiceOutput = myService.sayHello(\'Sandy\');', 
-                        },
-                         {
-                           lineno:'7',
-                            data:' };', 
-                        },
-                         {
-                           lineno:'8',
-                            data:' }', 
-                        },
-                         {
-                           lineno:'9',
-                            data:'app.service("myService", myService); // create utility function with service', 
-                        },
-                         {
-                           lineno:'10',
-                            data:'function myService() {  // service function on this object', 
-                        },
-                         {
-                           lineno:'11',
-                            data:'this.sayHello = function (name) {', 
-                        },
-                         {
-                           lineno:'12',
-                            data:'return "Hello "+name;', 
-                        },
-                         {
-                           lineno:'13',
-                            data:'};', 
-                        },
-                         {
-                           lineno:'14',
-                            data:'};', 
-                        }
-                    ]
+								{
+									lineno:'1',
+									data:'var app = angular.module("app", []);',
+								},
+								{
+									lineno:'2',
+									data:'app.controller("serviceCtrl",serviceCtrl);',
+								},
+								{
+									lineno:'3',
+									data:'function serviceCtrl($scope, myService){// service function call',
+								},
+								{
+									lineno:'4',
+									data:' $scope.ServiceOutput = "Service Output";',
+								},
+								{
+								   lineno:'5',
+									data:' $scope.HelloService = function () {', 
+								},
+								{
+								   lineno:'6',
+									data:' $scope.ServiceOutput = myService.sayHello(\'Sandy\');', 
+								},
+								{
+								   lineno:'7',
+									data:' };', 
+								},
+								{
+								   lineno:'8',
+									data:' }', 
+								},
+								{
+								   lineno:'9',
+									data:'app.service("myService", myService); // create utility function with service', 
+								},
+								{
+								   lineno:'10',
+									data:'function myService() {  // service function on this object', 
+								},
+								{
+								   lineno:'11',
+									data:'this.sayHello = function (name) {', 
+								},
+								{
+								   lineno:'12',
+									data:'return "Hello "+name;', 
+								},
+								{
+								   lineno:'13',
+									data:'};', 
+								},
+								{
+								   lineno:'14',
+									data:'};', 
+								}
+							]
                     
-                },
-                       {
-                    name:'Factory',
-                    points:[
+						},
                         {
-                            info:'Factory Design pattern characteristic is basicallyis that it\'s a central that produces new objects or functions. now, this is not an official defination of the factory design pattern. but I think it communicates the idea without too much of the computer science-y lingo.' 
-                        },
-                        {
-                            info:'The purpose of Factory is also same as Service however in this case we create a new object and add functions as properties of this object and at the end we return this object.' 
-                        },
-                         {
-                            info:'When we pass this service into our controller, those properties on the object will now be available in that controller through our factory.' 
-                        },
-                        {
-                            info:'Now the way we register the service factory function is very similar to the way we registered the service and the controller. We coded that factory method on the module. We specify the name of our factory, myFactory.'
-                        },
-                        {
-                            info:'note the very big difference. if we made the same exact call within that service method, the custom service would be expected to be the service, not produce a service as a result of either direct invocation, or invocation of one of its methods. '
-                        },
-                        {
-                            info:'For factory we need to create .factory method. Here, we have created function "sayHello" on the new object "factoryObject" created and then we are returning that object at the end of the factory method.'
-                        }],
-                    example:[
-                        {
-                            lineno:'1',
-                            data:'app.controller("factoryCtrl",factoryCtrl);',
-                        },
-                        {
-                            lineno:'2',
-                            data:'function factoryCtrl($scope, myFactory){// factory function call',
-                        },
-                        {
-                            lineno:'3',
-                            data:'$scope.FactoryOutput = "Factory Output";',
-                        },
-                        {
-                            lineno:'4',
-                            data:'$scope.HelloFactory = function () {',
-                        },
-                        {
-                           lineno:'5',
-                            data:' $scope.FactoryOutput = myFactory.sayHello(\'Sandy\');', 
-                        },
-                         {
-                           lineno:'6',
-                            data:' };', 
-                        },
-                         {
-                           lineno:'7',
-                            data:' };', 
-                        },
-                         {
-                           lineno:'8',
-                            data:' // create utility function with factory', 
-                        },
-                         {
-                           lineno:'9',
-                            data:' app.factory("myFactory", myFactory);', 
-                        },
-                         {
-                           lineno:'10',
-                            data:'function myFactory() {  // here we return the object', 
-                        },
-                         {
-                           lineno:'11',
-                            data:'var factoryObject = {};', 
-                        },
-                         {
-                           lineno:'12',
-                            data:'factoryObject.sayHello = function (name) {', 
-                        },
-                         {
-                           lineno:'13',
-                            data:'return "Hello "+name;', 
-                        },
-                         {
-                           lineno:'14',
-                            data:'}', 
-                        },
-                         {
-                           lineno:'15',
-                            data:'return factoryObject;', 
-                        },
-                         {
-                           lineno:'16',
-                            data:'};', 
-                        }
-                    ]
+							name:'Factory',
+							points:[
+									{
+										info:'Factory Design pattern characteristic is basicallyis that it\'s a central that produces new objects or functions. now, this is not an official defination of the factory design pattern. but I think it communicates the idea without too much of the computer science-y lingo.' 
+									},
+									{
+										info:'The purpose of Factory is also same as Service however in this case we create a new object and add functions as properties of this object and at the end we return this object.' 
+									},
+									 {
+										info:'When we pass this service into our controller, those properties on the object will now be available in that controller through our factory.' 
+									},
+									{
+										info:'Now the way we register the service factory function is very similar to the way we registered the service and the controller. We coded that factory method on the module. We specify the name of our factory, myFactory.'
+									},
+									{
+										info:'note the very big difference. if we made the same exact call within that service method, the custom service would be expected to be the service, not produce a service as a result of either direct invocation, or invocation of one of its methods. '
+									},
+									{
+										info:'For factory we need to create .factory method. Here, we have created function "sayHello" on the new object "factoryObject" created and then we are returning that object at the end of the factory method.'
+									}
+								  ],
+							example:[
+									{
+										lineno:'1',
+										data:'app.controller("factoryCtrl",factoryCtrl);',
+									},
+									{
+										lineno:'2',
+										data:'function factoryCtrl($scope, myFactory){// factory function call',
+									},
+									{
+										lineno:'3',
+										data:'$scope.FactoryOutput = "Factory Output";',
+									},
+									{
+										lineno:'4',
+										data:'$scope.HelloFactory = function () {',
+									},
+									{
+									   lineno:'5',
+										data:' $scope.FactoryOutput = myFactory.sayHello(\'Sandy\');', 
+									},
+									 {
+									   lineno:'6',
+										data:' };', 
+									},
+									 {
+									   lineno:'7',
+										data:' };', 
+									},
+									 {
+									   lineno:'8',
+										data:' // create utility function with factory', 
+									},
+									 {
+									   lineno:'9',
+										data:' app.factory("myFactory", myFactory);', 
+									},
+									 {
+									   lineno:'10',
+										data:'function myFactory() {  // here we return the object', 
+									},
+									 {
+									   lineno:'11',
+										data:'var factoryObject = {};', 
+									},
+									 {
+									   lineno:'12',
+										data:'factoryObject.sayHello = function (name) {', 
+									},
+									 {
+									   lineno:'13',
+										data:'return "Hello "+name;', 
+									},
+									 {
+									   lineno:'14',
+										data:'}', 
+									},
+									 {
+									   lineno:'15',
+										data:'return factoryObject;', 
+									},
+									 {
+									   lineno:'16',
+										data:'};', 
+									}
+								]
                     
-                }]
+						},
+						{
+							name:'Provider',
+							points:[
+									{
+										info:'The .provider method is the most verbose, and at the same time, the most flexible method of creating services in Angular. Not only you can create a factory that\'s dynamically configurable at the time of using the factory, with the provider method, you could custom configure the factor just once at the bootstraping of your entire application. and then use that factory throughout your application with your custom settings.' 
+									},
+									{
+										info:'In other words, you could configure this factory before your application starts.In fact, as the angular documentation tells us, the provider method is what acually gets executed behind the scenes when we configure our services with either .service or .factory methods.' 
+									},
+									 {
+										info:'The provider method has a special function $get that has a perticular property on the actual instance of the function. $get is a function that is directly attached to the provider instance. That function is a factory function. In others words it\'s just like the one that  we use to provide to the .factory method.' 
+									},
+									{
+										info:'Providers are the only service you can pass into your .config() function. Use a provider when you want to provide module-wide configuration for your service object before making it available.'
+									},
+									{
+										info:'.config function is a special function that you can invoke on the module instance that is guaranteed to run before any services, factories, or controller are even created. Which means that\'s a step for us to be able to tap into configure these services before they are ever created.'
+									},
+									{
+										info:\'let\'s see bellow example, we have created a provider using .provider method in which we are returning an object having function "sayHello" to the $get function.'
+									}
+								  ],
+							example:[
+									{
+										lineno:'1',
+										data:'app.controller("providerCtrl",providerCtrl);',
+									},
+									{
+										lineno:'2',
+										data:'function providerCtrl($scope, myProvider){// provider function call',
+									},
+									{
+										lineno:'3',
+										data:'$scope.ProviderOutput = "Provider Output";',
+									},
+									{
+										lineno:'4',
+										data:'$scope.HelloProvider = function () {',
+									},
+									{
+									   lineno:'5',
+										data:' $scope.ProviderOutput = myProvider.sayHello(\'Sandy\');', 
+									},
+									 {
+									   lineno:'6',
+										data:' };', 
+									},
+									 {
+									   lineno:'7',
+										data:' };', 
+									},
+									 {
+									   lineno:'8',
+										data:' // create utlity function with provider', 
+									},
+									 {
+									   lineno:'9',
+										data:' app.provider("myProvider", myProvider);', 
+									},
+									 {
+									   lineno:'10',
+										data:'function myProvider() {', 
+									},
+									 {
+									   lineno:'11',
+										data:'this.$get = function () {', 
+									},
+									 {
+									   lineno:'12',
+										data:'return {', 
+									},
+									 {
+									   lineno:'13',
+										data:' sayHello: function (name) {', 
+									},
+									 {
+									   lineno:'14',
+										data:'return "Hello "+ name;', 
+									},
+									 {
+									   lineno:'15',
+										data:'}', 
+									},
+									 {
+									   lineno:'16',
+										data:'};', 
+									},
+									 {
+									   lineno:'17',
+										data:'};', 
+									}
+									,
+									 {
+									   lineno:'18',
+										data:'};', 
+									}
+								]
+                    
+						}
+					]
                 
                 
             },    
-            infoPart2: '',
-            examples: [{
-                example1:{
-                line1: 'function sayHello(name){',
-                line2: 'var text = \'Hello \' + name; // local variable' ,
-                line3: 'var printName = function(){',
-                line4: 'alert(text);' ,
-                line5: '}',
-                line6:'return printName;',
-                line7: '}',
-                line8:'var say = sayHello(\'sandy\'); say();'    
-                },
-                example2:{
-                line1: 'function sayHello(name){',
-                line2: 'var text = \'Hello \' + name; // local variable' ,
-                line3: 'var printName = function(){',
-                line4: 'alert(text);' ,
-                line5: '}',
-                line6:'return printName;',
-                line7: '}'
-                }
-            }],
-            infoPart3: 'The above code has a closure because the anonymous function \'function() {alert(text);}\' is declare inside another function, sayHello() in this Example. In javascript, if you use the function keyword inside another function, you are creating a closure.',
-            infoPart4: 'In C, and most other common languages after a function returns, all the local variables are no longer accessible because the stack-frame is destroyed. ',
-            infoPart5: 'In JavaScript, if you declare a function within another function, then the local variables can remain accessible after returning from the function you called. This is demonstrated above, because we call the function say(); after we have returned from sayHello(). Notice that the code that we call references the variable text, which was a local variable of the function sayHello().',
+           
+            infoPart2: 'Notice that all three have the same function "sayHello" having same functionality but the way of declaration is different. This is the major difference between Service, Factory and Provider.',
             summary: {
-                heading: 'Summary of JavaScript closure',
+                heading: 'Summary',
                 points: [{
                     point: '1',
-                    info: 'Whenever you use function inside another function, a closure is used.'
+                    info: 'Angularjs service instantiated with .service method are singleton which means there\'s only one instance of the object that ever exists.'
                 }, {
                     point: '2',
-                    info: 'When ever you use  eval()  inside function, a closure is used. the text you eval can reference local variables of the function, and within eval you can even create new local variables by using eval(var abc = ....).',
+                    info: 'Angular service is also, service instantiated with a .service method  are lazily instantiated, which means they\'re only created if something acually depends on them. if nothing depends on them they\'re simply not instantiated at all.',
                 }, {
                     point: '3',
-                    info: 'When you use Function() inside a function, it does not create a closure. (The new function cannot reference the local variables of the function calling Function()).'
+                    info: '.service(\'name\', function), treats function as a function constructor, that what it means is that the angular JS internally will actually new up your function using in new keyword Which has ramifications for what this keyword means inside of your service function.'
                 },{
                     point: '4',
-                    info: 'A closure in JavaScript is like keeping a copy of the all the local variables, just as they were when a function exited.'
+                    info: 'The .factory() function allows us to produce any type of object or function. That includes a service in even a singleton, but it\'s not limited to that. '
                 },{
                     point: '5',
-                    info: 'It is probably best to think that a closure is always created just on entry to a function, and the local variables are added to that closure.'
+                    info: ' The .service on the other hand, is just a more limited factory. It limits us to creating a service that is a singleton and also one that\'s very hard to custom configure. '
                 },{
                     point: '6',
-                    info: 'If you are trying to do any dynamic source code modifications ( for example: myFunction = Function(myFunction.toString().replace(/Hello/,\'Hola\')); ), it won\'t work if myFunction is a closure (Of course, you would never even think of doing source code string substitution at runtime, but...).'
+                    info: 'The way you invoked the .factory method is very similarly to the way invoked the .service or really .controller method. You give it a name and a FactoryFunction. The name you give to your factory is what gets injected into other components. '
                 },{
                     point:'7',
-                    info:'It is possible to get function declarations within function declarations within functions - and you can get closures at more than one level.'
-                }]
+                    info:' the .service() method is also called a factory, but a much more limited one compared to the .factory() method. The service method is a factory that always produces the same type of service, a singleton and without an easy way to configure its behaviour. That .service() method is usually used as a shortcut for something that doesn't require any configuration whatsoever.'
+                },{
+					point:'8',
+					info:'The injected factory function refers to whatever is returned in the factory function. It can be an object literal with a property with a property that\'s a function that creates something for us. It can also directly be a function that itself, creates something for us. '
+				},{
+					point:'9',
+					info:'The $get property that\'s a function, is what makes the provider a provider a provider.'
+				},{
+					point:'10',
+					info:'.provider() - most verbose, but most flexible.'
+				},{
+					point:'11',
+					info:'configure factory not just at time of use, but at app bootstraping. '
+				},{
+					point:'12',
+					info:'.provider(\'name\', function), what ever the \'name\' is - that\'s what gets injected into other components'
+				},{
+					point:'13',
+					info:'.config() function gets called before any service, factory, or controller is intansiated. therfor we can\'t inject any regular components into .config. We CAN inject the provider of service with nameProvider.'
+				}
+				]
             }
         });
 
