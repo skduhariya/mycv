@@ -396,7 +396,7 @@
                     info: 'The way you invoked the .factory method is very similarly to the way invoked the .service or really .controller method. You give it a name and a FactoryFunction. The name you give to your factory is what gets injected into other components. '
                 },{
                     point:'7',
-                    info:' the .service() method is also called a factory, but a much more limited one compared to the .factory() method. The service method is a factory that always produces the same type of service, a singleton and without an easy way to configure its behaviour. That .service() method is usually used as a shortcut for something that doesn't require any configuration whatsoever.'
+                    info:' the .service() method is also called a factory, but a much more limited one compared to the .factory() method. The service method is a factory that always produces the same type of service, a singleton and without an easy way to configure its behaviour. That .service() method is usually used as a shortcut for something that doesn\'t require any configuration whatsoever.'
                 },{
 					point:'8',
 					info:'The injected factory function refers to whatever is returned in the factory function. It can be an object literal with a property with a property that\'s a function that creates something for us. It can also directly be a function that itself, creates something for us. '
