@@ -108,7 +108,7 @@
             smalInfo: '',
             technology: 'AngularJs',
             ques: 'Angular JS Service vs Factory vs Provider',
-            defination: 'In angularjs the controller should not contain much, if any business logic functionality itself. Insted, it should pass on the responsibility of handling business logic to some othe components. these components are Service, Factory and provider.',
+            defination: 'In angularjs the controller should not contain much, if any business logic functionality itself. Instead, it should pass on the responsibility of handling business logic to some other components. these components are Service, Factory and provider.',
             infoPart1: 'AngularJS Service, Factory or Provider all are used for the same purpose of creating utility function that can be used throughout the page with inject-able object. However, the way it is created and the way it is used are different. Here we shall try to understand them clearly.',
             infoTopic:{
                 topics:[{
