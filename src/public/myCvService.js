@@ -183,7 +183,7 @@
 							name:'Factory',
 							points:[
 									{
-										info:'Factory Design pattern characteristic is basicallyis that it\'s a central that produces new objects or functions. now, this is not an official defination of the factory design pattern. but I think it communicates the idea without too much of the computer science-y lingo.' 
+										info:'Factory Design pattern characteristic is basically that it\'s a central that produces new objects or functions. now, this is not an official defination of the factory design pattern. but I think it communicates the idea without too much of the computer science-y lingo.' 
 									},
 									{
 										info:'The purpose of Factory is also same as Service however in this case we create a new object and add functions as properties of this object and at the end we return this object.' 
