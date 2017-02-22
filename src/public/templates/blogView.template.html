@@ -11,10 +11,10 @@
     <p ng-repeat="point in  topics.points">
       {{point.info}}
     </p>
-    <code >
+   <pre> <code >
       <span class="tab-space" ng-repeat="example in topics.example">{{example.data}}</span>
       
-    </code>
+    </code></pre>
   </div>
   
   <iframe ng-show = "item.jsfiddle" width="100%" height="300" ng-src="{{item.jsfiddle}}" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
