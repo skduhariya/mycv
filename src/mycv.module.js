@@ -4,11 +4,12 @@
     angular.module('mycv', ['public'])
         .config(config);
 
-    config.$inject = ['$urlRouterProvider'];
+    config.$inject = ['$urlRouterProvider','$locationProvider'];
 
-    function config($urlRouterProvider) {
+    function config($urlRouterProvider,$locationProvider) {
 
         $urlRouterProvider.otherwise('/');
+        $locationProvider.html5Mode(true);
 
     };
 
