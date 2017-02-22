@@ -183,7 +183,7 @@
   date: 'Feb 20, 2017',
   img: 'images/1.jpg',
   topic: 'Angular JS Service vs Factory vs Provider',
-  smalInfo: '',
+  smalInfo: 'Dependency Injection - angularJs',
   technology: 'AngularJs',
   ques: 'Angular JS Service vs Factory vs Provider',
   defination: 'In angularjs the controller should not contain much, if any business logic functionality itself. Instead, it should pass on the responsibility of handling business logic to some other components. these components are Service, Factory and provider.',
