@@ -3,9 +3,9 @@
 
  angular.module('public').service('myCvService', myCvService);
 
- myCvService.$inject = ['$q', '$filter'];
+ myCvService.$inject = ['$q', '$filter', '$sce'];
 
- function myCvService($q, $filter) {
+ function myCvService($q, $filter, $sce) {
   //    console.log("service ... ");
 
   var service = this;
@@ -306,7 +306,7 @@
 
 
    },
-   jsfiddle:'http://jsfiddle.net/skduhariya/ADukg/10373/embedded/',
+   jsfiddle:$sce.trustAsResourceUrl('http://jsfiddle.net/skduhariya/ADukg/10373/embedded/'),
 
    infoPart2: 'Notice that all three have the same function "sayHello" having same functionality but the way of declaration is different. This is the major difference between Service, Factory and Provider.',
    summary: {
