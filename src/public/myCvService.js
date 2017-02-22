@@ -127,7 +127,7 @@
          data: '  var printName = function(){',
         }, {
          lineno: '4',
-         data: '    alert(text);";',
+         data: '    alert(text);',
         }, {
          lineno: '5',
          data: '  }',
