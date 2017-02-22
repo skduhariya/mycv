@@ -4,9 +4,10 @@
     angular.module('public')
         .config(routeConfig);
 
-    routeConfig.$inject = ['$stateProvider'];
+    routeConfig.$inject = ['$stateProvider','$locationProvider'];
 
-    function routeConfig($stateProvider) {
+    function routeConfig($stateProvider, $locationProvider) {
+        
         $stateProvider.state('public', {
             abstract: true,
             templateUrl: 'src/public/public.html'
@@ -46,7 +47,9 @@
                     return myCvService.getblogsDetails($stateParams.bName);
                 }]
             }
-        });;
+        });
+        
+        $locationProvider.html5Mode(true);
 
     };
 })();
