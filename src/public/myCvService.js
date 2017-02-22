@@ -141,9 +141,6 @@
          lineno: '8',
          data: ' var say = sayHello(\'sandy\'); say();',
         }]
-
-       }]
-
       }]
 
 
