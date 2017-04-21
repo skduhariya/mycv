@@ -31,7 +31,12 @@
      res3: "Development of dynamic menu.",
      res4: "Design and development of role based work flow of the project.",
      res5: "Responsible for writing a DAO layer and SERVICE layer coding."
-    }
+    },
+     url:{
+        isurl:flase,
+        uname:"",
+        uurl:"" 
+     }
 
    });
    projectList.push({
@@ -53,7 +58,12 @@
      res3: "Worked on many Cordova API,s to access native features of Phone",
      res4: "",
      res5: ""
-    }
+    },
+     url:{
+        isurl:flase,
+        uname:"",
+        uurl:"" 
+     }
 
    });
    projectList.push({
@@ -75,7 +85,12 @@
      res3: "Design and development of role based work flow of the project.",
      res4: "",
      res5: ""
-    }
+    },
+     url:{
+        isurl:true,
+        uname:"Global Knowledge Tech",
+        uurl:"http://www.globalknowledgetech.com/" 
+     }
 
    });
    projectList.push({
@@ -97,7 +112,12 @@
      res3: "Design and development of role based work flow of the project.",
      res4: "",
      res5: ""
-    }
+    },
+     url:{
+        isurl:false,
+        uname:"JECRC Portal",
+        uurl:"" 
+     }
 
    });
     projectList.push({
@@ -119,7 +139,12 @@
      res3: "Development of dynamic menu.",
      res4: "Design and development of role based work flow of the project.",
      res5: "Responsible for writing a DAO layer and SERVICE layer coding."
-    }
+    },
+     url:{
+        isurl:false,
+        uname:"eLearning Portal",
+        uurl:"http://elearning.silverlake.co.in/" 
+     }
 
    });
    blogList.push({
