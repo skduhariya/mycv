@@ -100,6 +100,28 @@
     }
 
    });
+    projectList.push({
+    shortName: "eLearning-Portal",
+    name: "eLearning Portal",
+    img: "images/2.jpg",
+    client: "SilverLake Information System Pvt. Ltd.",
+    shortDesc: "Training the Corporate Candidates in IBM Tech.",
+    dur: "4 months",
+    description: "eLearning Portal provides the corporate team to train their candidates by providing online video tutorials,it provides the Corporate Management to know the statistics of the each candidates performance.",
+    technologies: {
+     frontEnd: "HTML5, CSS3, JavaScript, AngularJS, jQuery, Bootstrap 3.0",
+     backEnd: "Core Java, J2EE, Spring Framework, JDBC Template",
+     database: "MySQL"
+    },
+    responsibility: {
+     res1: "Developed an application with responsive view for user.",
+     res2: "Design and development of angular UI-Routing.",
+     res3: "Development of dynamic menu.",
+     res4: "Design and development of role based work flow of the project.",
+     res5: "Responsible for writing a DAO layer and SERVICE layer coding."
+    }
+
+   });
    blogList.push({
       shortName: 'JS-Closure',
       date: 'Feb 17, 2017',
