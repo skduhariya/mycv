@@ -32,11 +32,7 @@
      res4: "Design and development of role based work flow of the project.",
      res5: "Responsible for writing a DAO layer and SERVICE layer coding."
     },
-     url:{
-        isurl:flase,
-        uname:"",
-        uurl:"" 
-     }
+     url:$sce.trustAsResourceUrl('')
 
    });
    projectList.push({
@@ -59,11 +55,8 @@
      res4: "",
      res5: ""
     },
-     url:{
-        isurl:flase,
-        uname:"",
-        uurl:"" 
-     }
+     url:$sce.trustAsResourceUrl('')
+
 
    });
    projectList.push({
@@ -86,11 +79,7 @@
      res4: "",
      res5: ""
     },
-     url:{
-        isurl:true,
-        uname:"Global Knowledge Tech",
-        uurl:"http://www.globalknowledgetech.com/" 
-     }
+     url:$sce.trustAsResourceUrl('http://www.globalknowledgetech.com/')
 
    });
    projectList.push({
@@ -113,11 +102,7 @@
      res4: "",
      res5: ""
     },
-     url:{
-        isurl:false,
-        uname:"JECRC Portal",
-        uurl:"" 
-     }
+     url:$sce.trustAsResourceUrl('')
 
    });
     projectList.push({
@@ -140,11 +125,7 @@
      res4: "Design and development of role based work flow of the project.",
      res5: "Responsible for writing a DAO layer and SERVICE layer coding."
     },
-     url:{
-        isurl:false,
-        uname:"eLearning Portal",
-        uurl:"http://elearning.silverlake.co.in/" 
-     }
+     url: $sce.trustAsResourceUrl('http://elearning.silverlake.co.in/')
 
    });
    blogList.push({
