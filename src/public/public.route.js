@@ -4,11 +4,11 @@
     angular.module('public')
         .config(routeConfig);
 
-  //  routeConfig.$inject = ['$stateProvider','$locationProvider'];
-    routeConfig.$inject = ['$stateProvider'];
+   routeConfig.$inject = ['$stateProvider','$locationProvider'];
+//     routeConfig.$inject = ['$stateProvider'];
 
-   // function routeConfig($stateProvider, $locationProvider) {
-    function routeConfig($stateProvider) {
+   function routeConfig($stateProvider, $locationProvider) {
+//     function routeConfig($stateProvider) {
         
         $stateProvider.state('public', {
             abstract: true,
@@ -51,7 +51,7 @@
             }
         });
         
-     //   $locationProvider.html5Mode(true);
+       $locationProvider.html5Mode(true);
 
     };
 })();
