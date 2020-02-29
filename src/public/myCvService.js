@@ -412,7 +412,7 @@
 
 
   },
-  jsfiddle: $sce.trustAsResourceUrl('http://jsfiddle.net/skduhariya/ADukg/10373/embedded/'),
+  jsfiddle: $sce.trustAsResourceUrl('https://jsfiddle.net/skduhariya/dpm8wc22/2/embedded/js,html,css,result/dark/'),
   points2: [{
    info: 'Notice that all three have the same function "sayHello" having same functionality but the way of declaration is different. This is the major difference between Service, Factory and Provider.',
   }],
