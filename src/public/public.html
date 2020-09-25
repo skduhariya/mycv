@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-md-4">
                 <div class="left-side">
                     <div class="myPic">
-                        <img class="img-responsive" src="images/mypic.jpg"/>
+                        <img class="img-responsive" src="images/mypic.jpg" />
                     </div>
                     <div class="myMenu">
                         <ul>
@@ -34,45 +34,46 @@
                             </li>
                         </ul>
                         <div class="mySocial">
-                          <ul>
-                            <li><a href="https://www.facebook.com/skduhariya" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="https://twitter.com/skduhariya" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="https://in.linkedin.com/in/skduhariya" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
+                            <ul>
+                                <li><a href="https://www.facebook.com/skduhariya" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/skduhariya" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://in.linkedin.com/in/skduhariya" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
 
                         <div class="copyright">
-                          copyright &copy; 2017
+                            copyright &copy; <span id="year"></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-9 col-md-8">
-              <div class="right-side">
-              <ui-view>
+                <div class="right-side">
+                    <ui-view>
 
-              </ui-view>
+                    </ui-view>
 
-              <div class="row">
-                  <div class="col-sm-12">
-                      <div class="heading"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="heading"></div>
 
-                  </div>
-              </div>
-              <div class="row text-center" style="padding: 0px 6px;">
-                <div class="col-sm-12"><a href="/mycv/Sandeep_resume.pdf" download class="cvbtn" target="_blank"><span class="glyphicon glyphicon-download"></span> Download My Cv</a></div>
-              </div>
-                  <div class="row text-right" style="padding: 5px 34px;">
-                      <div class="col-sm-12" style="
-    border-top: 1px solid #607d8b;
-    padding: 10px 0 1px;
-">
-                   <label> Visitor no: </label> <img src="http://hitwebcounter.com/counter/counter.php?page=6597537&style=0038&nbdigits=5&type=ip&initCount=10" title="Visitors" Alt="visitor no"   border="0" >
-                      </div>
-                  </div>
-            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="padding: 0px 6px;">
+                        <div class="col-sm-12"><a href="/mycv/Sandeep_resume.pdf" download class="cvbtn" target="_blank"><span class="glyphicon glyphicon-download"></span> Download My Cv</a></div>
+                    </div>
+                    <div class="row text-right" style="padding: 5px 34px;">
+                        <div class="col-sm-12" style="border-top: 1px solid #607d8b;padding: 10px 0 1px;">
+                            <label> Visitor no: </label> <img src="http://hitwebcounter.com/counter/counter.php?page=6597537&style=0038&nbdigits=5&type=ip&initCount=10" title="Visitors" Alt="visitor no" border="0">
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
+    <script>
+        let date = new Date();
+        document.getElementById('year').innerHTML = date.getFullYear();
+    </script>
 </section>
