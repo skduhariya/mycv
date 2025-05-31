@@ -338,6 +338,7 @@ body {
     width: 100%;
     overflow: hidden;
     margin-top: 15px;
+    max-height: 245px;
 }
 
 .projects img {
