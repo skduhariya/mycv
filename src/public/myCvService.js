@@ -131,7 +131,7 @@
    projectList.push({
     shortName: "A Digital Product Design Agency",
     name: "A Digital Product Design Agency",
-    img: "images/5.jpg",
+    img: "images/5.png",
     client: "Self Learning",
     shortDesc: "We are Creative and Professional Digital AgencyTraining the Corporate Candidates in IBM Tech.",
     dur: "1 week",
