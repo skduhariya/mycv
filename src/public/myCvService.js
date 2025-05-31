@@ -128,6 +128,29 @@
      url: $sce.trustAsResourceUrl('http://elearning.silverlake.co.in/')
 
    });
+   projectList.push({
+    shortName: "A Digital Product Design Agency",
+    name: "A Digital Product Design Agency",
+    img: "images/5.jpg",
+    client: "Self Learning",
+    shortDesc: "We are Creative and Professional Digital AgencyTraining the Corporate Candidates in IBM Tech.",
+    dur: "1 week",
+    description: "The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.",
+    technologies: {
+     frontEnd: "HTML5, Scss, Angular2+, Figma, responsive design",
+     backEnd: "",
+     database: ""
+    },
+    responsibility: {
+     res1: "Developed an application with responsive view for user.",
+     res2: "Design and development of angular14.",
+     res3: "Development of dynamic menu.",
+     res4: "Design and development of role based work flow of the project.",
+     res5: "Responsible for writing a DAO layer and SERVICE layer coding."
+    },
+     url: $sce.trustAsResourceUrl('https://skduhariya.github.io/digital_product_design/')
+
+   });
    blogList.push({
       shortName: 'JS-Closure',
       date: 'Feb 17, 2017',
