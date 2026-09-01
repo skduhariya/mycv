@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "title": "Languages & Core Runtimes",
+      "description": "Backend & frontend programming languages matching fullstack enterprise delivery",
+      "skills": [
+        { "name": "Java (Java 8 / Java 11 / OOP)", "score": 9.0, "maxScore": 10, "icon": "java", "category": "core", "highlight": true },
+        { "name": "TypeScript", "score": 9.0, "maxScore": 10, "icon": "typescript", "category": "core", "highlight": true },
+        { "name": "JavaScript (ES6+)", "score": 9.0, "maxScore": 10, "icon": "javascript", "category": "core", "highlight": true },
+        { "name": "Kotlin", "score": 8.0, "maxScore": 10, "icon": "kotlin", "category": "core", "highlight": true },
+        { "name": "Dart", "score": 8.0, "maxScore": 10, "icon": "code", "category": "core", "highlight": true }
+      ]
+    },
+    {
+      "title": "Backend Frameworks & Architecture",
+      "description": "Enterprise microservices, distributed architectures, and API integrations",
+      "skills": [
+        { "name": "Spring Boot & Spring Framework", "score": 9.0, "maxScore": 10, "icon": "springboot", "category": "framework", "highlight": true },
+        { "name": "Microservices Architecture & Design", "score": 9.0, "maxScore": 10, "icon": "server", "category": "framework", "highlight": true },
+        { "name": "RESTful APIs & Integration", "score": 9.5, "maxScore": 10, "icon": "database", "category": "framework", "highlight": true },
+        { "name": "SOAP Services & Platform Pipelines", "score": 8.5, "maxScore": 10, "icon": "cpu", "category": "framework" }
+      ]
+    },
+    {
+      "title": "Frontend Technologies & UI Systems",
+      "description": "Modern reactive single-page applications, design systems, and responsive layouts",
+      "skills": [
+        { "name": "Angular (2+ / 19+)", "score": 9.0, "maxScore": 10, "icon": "angular", "category": "framework", "highlight": true },
+        { "name": "React.js & Next.js", "score": 8.5, "maxScore": 10, "icon": "react", "category": "framework", "highlight": true },
+        { "name": "AngularJS (Legacy Migration)", "score": 9.0, "maxScore": 10, "icon": "angular", "category": "framework" },
+        { "name": "Angular Material & Design Tokens", "score": 8.5, "maxScore": 10, "icon": "figma", "category": "tools" },
+        { "name": "HTML5, CSS3, SCSS & Bootstrap", "score": 9.0, "maxScore": 10, "icon": "html", "category": "core" }
+      ]
+    },
+    {
+      "title": "Core Competencies & Engineering Leadership",
+      "description": "System architecture, cross-functional delivery, and performance metrics",
+      "skills": [
+        { "name": "System Integration & Workflow Design", "score": 9.5, "maxScore": 10, "icon": "shield", "category": "soft", "highlight": true },
+        { "name": "End-to-End Application Delivery", "score": 9.5, "maxScore": 10, "icon": "check-circle", "category": "soft", "highlight": true },
+        { "name": "Performance Optimization & Auditing", "score": 9.0, "maxScore": 10, "icon": "sparkles", "category": "soft" },
+        { "name": "Agile Software Development & Leadership", "score": 9.0, "maxScore": 10, "icon": "users", "category": "soft" }
+      ]
+    }
+  ]
+}

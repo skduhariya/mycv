@@ -1,0 +1,214 @@
+[
+  {
+    "id": "google-client-layer",
+    "title": "Google Client Layer Platform",
+    "client": "Epam / Google Client",
+    "duration": "04/2025 — Present",
+    "shortDesc": "High-performance software application and UI workflows for global Google client layers.",
+    "description": "Engineered and maintained mission-critical, high-performance software applications for global Google client layers. Utilized Dart, TypeScript, and Kotlin to build efficient system UI components, modular frontend interfaces, and cross-platform architecture workflows.",
+    "image": "/images/4.jpg",
+    "featured": true,
+    "category": "Enterprise",
+    "technologies": {
+      "frontEnd": ["Dart", "TypeScript", "Kotlin UI", "Cross-Platform Architecture"],
+      "backEnd": ["Google Client APIs", "Microservices"],
+      "database": ["Distributed Cloud Datastores"]
+    },
+    "responsibilities": [
+      "Develop and maintain high-performance software applications for global Google client layers.",
+      "Utilize Dart, TypeScript, and Kotlin to build efficient system UI components and cross-platform workflows.",
+      "Architect modular, reusable components and optimize end-to-end data flow velocity."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": "hitachi-csps",
+    "title": "CSPS Enterprise Portfolio",
+    "client": "Hitachi Vantara",
+    "duration": "04/2022 — 04/2025",
+    "shortDesc": "Core web application architecture and optimized RESTful APIs for enterprise cloud services.",
+    "description": "Led the functional development and architectural planning of core web applications in the CSPS portfolio using Java, Spring Boot, and microservices architecture. Designed and implemented highly optimized RESTful APIs to decouple dependencies, streamline enterprise integrations, and maximize data flow velocities. Conferred the HV Pinnacle Award (Shining Star) for delivery excellence.",
+    "image": "/images/1.jpg",
+    "featured": true,
+    "category": "Enterprise",
+    "technologies": {
+      "frontEnd": ["Angular (2+)", "TypeScript", "SCSS", "Angular Material"],
+      "backEnd": ["Java (8/11)", "Spring Boot", "Microservices Architecture", "RESTful APIs"],
+      "database": ["PostgreSQL", "SQL Server"]
+    },
+    "responsibilities": [
+      "Led the functional development and architectural planning of core web applications using Java, Spring Boot, and Microservices.",
+      "Designed and implemented highly optimized RESTful APIs to decouple dependencies and streamline enterprise integrations.",
+      "Collaborated across technical and business silos to translate intricate user stories into modular, production-ready source code.",
+      "Awarded HV Pinnacle Award (Shining Star) for operational unit delivery metrics."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": "fis-docusign-banking",
+    "title": "DocuSign Banking Pipeline & Microservices",
+    "client": "FIS (Fidelity National Information Services)",
+    "duration": "11/2020 — 04/2022",
+    "shortDesc": "Automated document pipeline and mission-critical banking tools utilizing SOAP and RESTful APIs.",
+    "description": "Developed robust SOAP and REST APIs for seamless DocuSign platform implementation, eliminating legacy manual steps and automating enterprise document pipelines. Spearheaded a migration towards highly scalable, microservices-based system configurations for mission-critical banking tools.",
+    "image": "/images/3.jpg",
+    "featured": true,
+    "category": "Enterprise",
+    "technologies": {
+      "frontEnd": ["Angular", "TypeScript", "Bootstrap"],
+      "backEnd": ["Java (8/11)", "Spring Boot", "Microservices", "SOAP APIs", "REST APIs", "DocuSign Integration"],
+      "database": ["SQL Server", "Oracle DB"]
+    },
+    "responsibilities": [
+      "Developed robust SOAP and REST APIs for seamless DocuSign platform implementation.",
+      "Eliminated legacy manual steps and automated secure document pipelines.",
+      "Spearheaded a migration towards highly scalable, microservices-based configurations for banking tools."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": "customer-portal",
+    "title": "Customer Portal",
+    "client": "3M India",
+    "duration": "9 months",
+    "shortDesc": "Sales Portal Application developed for 3M India to track end-to-end sales order generation.",
+    "description": "The Sales Portal Application is a robust enterprise software solution developed for 3M India aimed at sales order lifecycle management. From the moment an order is generated until the full invoice is received and settled, the system maintains detailed end-to-end tracking. It supports role-based access for multiple profiles (Sales Representatives, Direct Customers, Finance Officers) across multiple platforms.",
+    "image": "/images/1.jpg",
+    "featured": true,
+    "category": "Enterprise",
+    "technologies": {
+      "frontEnd": ["AngularJS", "JavaScript (ES6)", "Bootstrap", "HTML5", "CSS3", "jQuery"],
+      "backEnd": ["Core Java", "J2EE", "Spring Framework", "JDBC Template"],
+      "database": ["AS400 Admin", "SQL Server"]
+    },
+    "responsibilities": [
+      "Engineered an intuitive, responsive user interface supporting multi-role access workflows.",
+      "Designed and developed client-side UI-Routing and role-based navigation guards.",
+      "Built dynamic menu systems tailored to sales, customer, and finance access privileges.",
+      "Developed DAO and Service layers to interface seamlessly with AS400 and SQL Server backends.",
+      "Conducted rigorous testing and performance tuning across cross-platform browsers."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": "digital-product-design-agency",
+    "title": "A Digital Product Design Agency",
+    "client": "Self / Concept Studio",
+    "duration": "1 week",
+    "shortDesc": "Creative & modern digital product design agency platform with interactive UI/UX showcase.",
+    "description": "A high-craft agency web application demonstrating cutting-edge frontend architecture, responsive typography, and custom Figma-to-code design system translation. Built with modern Angular and SCSS with focus on seamless animation, high conversion rates, and scalable code organization.",
+    "image": "/images/5.png",
+    "featured": true,
+    "category": "Design & Agency",
+    "technologies": {
+      "frontEnd": ["Angular (2+ / 14)", "TypeScript", "SCSS", "HTML5", "Figma", "Responsive Design"],
+      "backEnd": ["Static API / GitHub Pages"],
+      "database": []
+    },
+    "responsibilities": [
+      "Designed and implemented high-fidelity user interface from custom Figma components.",
+      "Architected clean Angular standalone/module structure with dynamic menu routing.",
+      "Engineered fluid CSS/SCSS animations and responsive layouts across all device form factors.",
+      "Deployed and optimized for production delivery via GitHub Pages."
+    ],
+    "liveUrl": "https://skduhariya.github.io/digital_product_design/",
+    "githubUrl": "https://github.com/skduhariya/digital_product_design"
+  },
+  {
+    "id": "elearning-portal",
+    "title": "eLearning Portal",
+    "client": "SilverLake Information System Pvt. Ltd",
+    "duration": "4 months",
+    "shortDesc": "Online training portal for corporate candidates with video streaming and performance metrics.",
+    "description": "The eLearning Portal enables enterprise organizations to train their candidates through curated online video tutorials, structured assessments, and comprehensive candidate performance analytics for management teams.",
+    "image": "/images/2.jpg",
+    "featured": false,
+    "category": "Web Apps",
+    "technologies": {
+      "frontEnd": ["AngularJS", "JavaScript", "HTML5", "CSS3", "Bootstrap"],
+      "backEnd": ["Core Java", "J2EE", "Spring Framework", "JDBC Template"],
+      "database": ["MySQL"]
+    },
+    "responsibilities": [
+      "Developed responsive trainee dashboard and video playback interface.",
+      "Implemented client-side routing, progress tracking, and score calculation engines.",
+      "Developed backend DAO and Service layer APIs for reporting and statistics.",
+      "Integrated secure authentication and role-based permissions."
+    ],
+    "liveUrl": "http://elearning.silverlake.co.in/",
+    "githubUrl": ""
+  },
+  {
+    "id": "global-knowledge-tech",
+    "title": "Global Knowledge Tech",
+    "client": "Global Knowledge",
+    "duration": "3 months",
+    "shortDesc": "Training portal providing comprehensive education solutions for IBM enterprise technologies.",
+    "description": "Global Knowledge is a premier learning services and professional development solutions provider. This portal facilitates worldwide IT training, skill gap assessment, and enterprise continuous learning programs.",
+    "image": "/images/4.jpg",
+    "featured": false,
+    "category": "Enterprise",
+    "technologies": {
+      "frontEnd": ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap"],
+      "backEnd": ["Core Java", "J2EE"],
+      "database": ["MySQL"]
+    },
+    "responsibilities": [
+      "Coordinated with clients to extract and document detailed functional specifications.",
+      "Created modern responsive layouts and dynamic course catalog navigation.",
+      "Developed role-based workflow for course instructors and corporate trainees."
+    ],
+    "liveUrl": "http://www.globalknowledgetech.com/",
+    "githubUrl": ""
+  },
+  {
+    "id": "gksl-academic",
+    "title": "GKSL Academic",
+    "client": "GKSL India Bangalore",
+    "duration": "5 months",
+    "shortDesc": "Complete education and mock test hybrid mobile solution with offline capability.",
+    "description": "A hybrid mobile application built with Cordova, providing corporate and government training modules with offline mock test taking capabilities, auto-sync when online, and native hardware API integrations.",
+    "image": "/images/2.jpg",
+    "featured": false,
+    "category": "Mobile & Hybrid",
+    "technologies": {
+      "frontEnd": ["HTML5", "CSS3", "JavaScript", "AngularJS", "Bootstrap"],
+      "backEnd": ["Cordova Native APIs"],
+      "database": ["SQLite"]
+    },
+    "responsibilities": [
+      "Interfaced with multiple Apache Cordova native device APIs (Storage, Network, Hardware).",
+      "Designed offline data caching and mock exam timer synchronization with SQLite.",
+      "Created sleek mobile-first touch UI with high responsiveness."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": "jecrc-portal",
+    "title": "JECRC Portal",
+    "client": "JECRC Jaipur",
+    "duration": "5 months",
+    "shortDesc": "Web portal providing analytics and user management for university computer laboratory users.",
+    "description": "A centralized management system for tracking computer lab allocation, user authentication, student session histories, and academic resource distribution across department networks.",
+    "image": "/images/3.jpg",
+    "featured": false,
+    "category": "Web Apps",
+    "technologies": {
+      "frontEnd": ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap"],
+      "backEnd": ["Core Java", "J2EE"],
+      "database": ["MySQL"]
+    },
+    "responsibilities": [
+      "Documented student and lab administrator requirements.",
+      "Developed responsive admin dashboard and user logging workflows.",
+      "Implemented database schema and query optimizations for fast search."
+    ],
+    "liveUrl": "",
+    "githubUrl": ""
+  }
+]

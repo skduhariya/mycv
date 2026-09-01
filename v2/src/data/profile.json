@@ -1,0 +1,64 @@
+{
+  "name": "Sandeep Kumar",
+  "title": "Senior Software Engineer II",
+  "status": "Available for Senior / Lead Full Stack Roles",
+  "location": "Hyderabad, India",
+  "avatarUrl": "/images/mypic.jpg",
+  "resumePdf": "/sandeep_kumar_ats_resume (1).pdf",
+  "email": "skduhariya@gmail.com",
+  "altEmail": "skduhariya@live.com",
+  "phone": "+91 8147976835",
+  "address": "Hyderabad, India",
+  "careerStartDate": "2015-11-01",
+  "bio": [
+    "Results-driven Java Full Stack Developer and Senior Software Engineer with over {{yearsOfExperience}} years of experience delivering scalable, high-quality enterprise solutions. Proven track record in microservices architecture, performance optimization, and cross-functional team leadership.",
+    "Expert in building robust backend APIs (Java, Kotlin, Spring Boot, Microservices, RESTful & SOAP) and modern front-end user interfaces (Angular, ReactJS, TypeScript, Dart) with strong problem-solving and systems integration skills."
+  ],
+  "stats": [
+    { "label": "Years Experience", "value": "10+", "description": "Enterprise Full Stack Leadership" },
+    { "label": "Key Enterprises", "value": "Google & Hitachi", "description": "Global Tier-1 Client Delivery" },
+    { "label": "Honors & Awards", "value": "4x Won", "description": "Pinnacle & Eagle Squad Winner" },
+    { "label": "Core Stack", "value": "Full Stack", "description": "Java, Spring Boot, TS, React/Angular" }
+  ],
+  "highlights": [
+    {
+      "title": "Google Client Layer Platform",
+      "client": "Epam India (Google Project)",
+      "impact": "Engineered high-performance software applications for global Google client layers utilizing Dart, TypeScript, and Kotlin for efficient cross-platform UI workflows.",
+      "metric": "Global Scale",
+      "badge": "Google Client Project",
+      "icon": "sparkles"
+    },
+    {
+      "title": "CSPS Core Portfolio & Architecture",
+      "client": "Hitachi Vantara",
+      "impact": "Led functional development and architectural planning of core web applications using Java, Spring Boot, and Microservices. Conferred the HV Pinnacle Award (Shining Star) for elite delivery metrics.",
+      "metric": "Pinnacle Winner",
+      "badge": "HV Pinnacle Award",
+      "icon": "shield"
+    },
+    {
+      "title": "DocuSign Banking Pipeline Automation",
+      "client": "FIS (Fidelity National Information Services)",
+      "impact": "Developed robust SOAP and REST APIs for seamless DocuSign platform implementation, eliminating legacy manual steps and automating mission-critical banking document pipelines.",
+      "metric": "Zero Legacy Steps",
+      "badge": "Enterprise Banking",
+      "icon": "server"
+    },
+    {
+      "title": "Citadel & Project RHR Modernization",
+      "client": "Mavenwave Partners",
+      "impact": "Engineered shareable frontend interface libraries and secure backend components using Java and Spring Boot. Won 2x Eagle Squad Awards & Pat-on-the-Back Award.",
+      "metric": "3x Awards Won",
+      "badge": "Eagle Squad Winner",
+      "icon": "check-circle"
+    }
+  ],
+  "socialLinks": [
+    { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/skduhariya", "icon": "linkedin", "username": "linkedin.com/in/skduhariya" },
+    { "id": "github", "label": "GitHub", "url": "https://github.com/skduhariya", "icon": "github", "username": "github.com/skduhariya" },
+    { "id": "leetcode", "label": "LeetCode", "url": "https://leetcode.com/skduhariya", "icon": "code", "username": "leetcode.com/skduhariya" },
+    { "id": "email", "label": "Email", "url": "mailto:skduhariya@gmail.com", "icon": "mail", "username": "skduhariya@gmail.com" },
+    { "id": "location", "label": "Hyderabad", "url": "https://maps.google.com/?q=Hyderabad", "icon": "map-pin", "username": "Hyderabad, India" }
+  ]
+}

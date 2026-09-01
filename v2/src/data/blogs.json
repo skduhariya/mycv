@@ -1,0 +1,78 @@
+[
+  {
+    "id": "js-closures",
+    "title": "Understanding JavaScript Closures in Depth",
+    "date": "Feb 17, 2017",
+    "readingTime": "5 min read",
+    "topic": "JavaScript Core Fundamentals",
+    "technology": "JavaScript (ES6)",
+    "image": "/images/3.jpg",
+    "summary": "Demystifying lexical scope, execution contexts, and how inner functions retain access to outer variables in memory.",
+    "definition": "A closure is an inner function that has access to the outer (enclosing) function's variables — the scope chain. The closure has three scope chains: it has access to its own scope (variables defined within its own curly brackets), it has access to the outer function's variables, and it has access to the global variables.",
+    "explanation": [
+      "In JavaScript, functions are first-class citizens. When a function executes, a new execution context with an activation object (stack frame) is created.",
+      "Unlike lower-level languages like C where the stack frame is destroyed upon function return, in JavaScript, if an inner function references an outer variable, that activation record is preserved in heap memory.",
+      "This enables powerful programming paradigms including data encapsulation (private variables), function currying, and event memoization."
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "title": "Basic Closure Example",
+        "code": "function sayHello(name) {\n  var text = 'Hello ' + name; // Local variable in outer scope\n\n  var printName = function() {\n    console.log(text); // Accesses outer scope variable\n  };\n\n  return printName; // Returns the inner function\n}\n\n// Execution:\nvar say = sayHello('Sandeep');\nsay(); // Output: 'Hello Sandeep' (closure keeps 'text' alive!)"
+      },
+      {
+        "language": "javascript",
+        "title": "Module Pattern & Private State",
+        "code": "function createCounter() {\n  let count = 0; // Private state\n\n  return {\n    increment: () => ++count,\n    decrement: () => --count,\n    getCount: () => count\n  };\n}\n\nconst counter = createCounter();\nconsole.log(counter.increment()); // 1\nconsole.log(counter.increment()); // 2\nconsole.log(counter.getCount());  // 2"
+      }
+    ],
+    "takeaways": [
+      "Whenever you define a function inside another function in JS, a closure is created.",
+      "A closure preserves a reference to outer variables at the time of creation, not just a static copy.",
+      "Closures power React Hooks (e.g. useState, useEffect), memoization helpers, and async callbacks.",
+      "Be mindful of memory lifecycle: lingering references in long-lived closures can prevent garbage collection if not cleared."
+    ],
+    "jsfiddleUrl": ""
+  },
+  {
+    "id": "angular-service-factory-provider",
+    "title": "Angular Dependency Injection: Service vs Factory vs Provider",
+    "date": "Feb 20, 2017",
+    "readingTime": "6 min read",
+    "topic": "Frontend Architecture & DI Patterns",
+    "technology": "Angular Architecture",
+    "image": "/images/1.jpg",
+    "summary": "A deep architectural comparison of singletons, lazy instantiation, and configurable providers in Angular dependency injection systems.",
+    "definition": "In modern frontend frameworks, controllers and components should avoid containing bulky business logic. Instead, business logic is delegated to injectable units. Service, Factory, and Provider are three distinct recipes for creating injectable dependencies.",
+    "explanation": [
+      "All three recipes produce singletons in Angular's injector hierarchy — only one instance exists per injector scope.",
+      "Services are instantiated with the 'new' constructor keyword, binding properties to 'this'.",
+      "Factories return an object literal or function directly, giving developers full flexibility to return any construct.",
+      "Providers are the foundational primitive: they expose a $get method and can be configured during the application bootstrap phase before any service is instantiated."
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "title": "1. Service (Constructor Recipe)",
+        "code": "app.service('myService', function() {\n  this.sayHello = function(name) {\n    return 'Hello ' + name;\n  };\n});"
+      },
+      {
+        "language": "javascript",
+        "title": "2. Factory (Object Return Recipe)",
+        "code": "app.factory('myFactory', function() {\n  var factoryObj = {};\n  factoryObj.sayHello = function(name) {\n    return 'Hello ' + name;\n  };\n  return factoryObj;\n});"
+      },
+      {
+        "language": "javascript",
+        "title": "3. Provider (Configurable Bootstrap Recipe)",
+        "code": "app.provider('myProvider', function() {\n  var greeting = 'Hello';\n  \n  this.setGreeting = function(val) {\n    greeting = val;\n  };\n\n  this.$get = function() {\n    return {\n      sayHello: function(name) {\n        return greeting + ' ' + name;\n      }\n    };\n  };\n});"
+      }
+    ],
+    "takeaways": [
+      "Service: Use when you want a standard class/constructor instance.",
+      "Factory: Use when you want to return custom objects, functions, or run custom initialization logic.",
+      "Provider: Use when the injectable dependency requires application-wide configuration prior to startup.",
+      "Modern frameworks (React Context, Angular 19 Signals/Injectable, Vue Provide/Inject) carry these same core DI principles forward."
+    ],
+    "jsfiddleUrl": "https://jsfiddle.net/skduhariya/dpm8wc22/2/embedded/js,html,css,result/dark/"
+  }
+]

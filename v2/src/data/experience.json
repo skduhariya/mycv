@@ -1,0 +1,99 @@
+[
+  {
+    "id": "epam-google",
+    "role": "Sr. Software Engineer",
+    "company": "Epam India",
+    "clientProject": "Google Client Layer Project",
+    "location": "Hyderabad, India",
+    "duration": "04/2025 — Present",
+    "startDate": "2025-04",
+    "endDate": "Present",
+    "isCurrent": true,
+    "companyUrl": "https://www.epam.com/",
+    "description": "Engineering and maintaining high-performance, cross-platform software applications for global Google client layers.",
+    "responsibilities": [
+      "Develop and maintain high-performance software applications for global Google client layers.",
+      "Utilize Dart, TypeScript, and Kotlin to build efficient system UI components and cross-platform architecture workflows.",
+      "Architect modular, reusable components and optimize client-server communication pipelines."
+    ],
+    "technologies": ["Dart", "TypeScript", "Kotlin", "Cross-Platform UI", "Google Client APIs", "Git"]
+  },
+  {
+    "id": "hitachi-vantara",
+    "role": "Sr. Consultant 1",
+    "company": "Hitachi Vantara",
+    "clientProject": "CSPS Portfolio",
+    "location": "Hyderabad, India",
+    "duration": "04/2022 — 04/2025",
+    "startDate": "2022-04",
+    "endDate": "2025-04",
+    "isCurrent": false,
+    "companyUrl": "https://www.hitachivantara.com/",
+    "description": "Led core web application development and architectural planning for the enterprise CSPS portfolio.",
+    "responsibilities": [
+      "CSPS Portfolio: Led the functional development and architectural planning of core web applications using Java, Spring Boot, and Microservices.",
+      "Designed and implemented highly optimized RESTful APIs to decouple dependencies, streamline enterprise integrations, and maximize data flow velocities.",
+      "Collaborated across technical and business silos to translate intricate user stories into modular, production-ready source code.",
+      "Awarded the prestigious HV Pinnacle Award (Shining Star) for elite delivery metrics and contributions to operational unit success."
+    ],
+    "technologies": ["Java", "Spring Boot", "Microservices Architecture", "RESTful APIs", "Angular", "TypeScript", "SQL"]
+  },
+  {
+    "id": "fis",
+    "role": "Senior Software Engineer II",
+    "company": "FIS",
+    "clientProject": "Mission-Critical Banking Tools & DocuSign Integration",
+    "location": "Mohali, India",
+    "duration": "11/2020 — 04/2022",
+    "startDate": "2020-11",
+    "endDate": "2022-04",
+    "isCurrent": false,
+    "companyUrl": "https://www.fisglobal.com/",
+    "description": "Architected enterprise document pipelines and banking tools using robust SOAP/REST APIs and microservices configurations.",
+    "responsibilities": [
+      "Developed robust SOAP and REST APIs for seamless DocuSign platform implementation, eliminating legacy steps and automating document pipelines.",
+      "Spearheaded a migration towards highly scalable, microservices-based system configurations for mission-critical banking tools.",
+      "Optimized latency and transaction reliability across enterprise banking integration layers."
+    ],
+    "technologies": ["Java", "Spring Boot", "Microservices", "SOAP APIs", "RESTful APIs", "DocuSign Integration", "Security & Encryption"]
+  },
+  {
+    "id": "mavenwave",
+    "role": "Sr. Software Engineer",
+    "company": "Mavenwave Partners India Pvt. Ltd.",
+    "clientProject": "Citadel Platform, Project RHR & Fuel Application",
+    "location": "Chandigarh, India",
+    "duration": "12/2018 — 07/2020",
+    "startDate": "2018-12",
+    "endDate": "2020-07",
+    "isCurrent": false,
+    "companyUrl": "https://www.mavenwave.com/",
+    "description": "Engineered enterprise cloud systems, performance matrices, and shareable UI component libraries alongside secure server-side components.",
+    "responsibilities": [
+      "Optimized enterprise web systems for enhanced performance matrix execution, backend stability, and codebase maintainability.",
+      "Engineered shareable frontend interface libraries alongside secure server-side components using Java and Spring Boot.",
+      "Interfaced continuously with business managers to turn operational constraints into technical roadmap designs.",
+      "Earned 2x Eagle Squad Awards (Citadel Platform & Project RHR) and the Pat-on-the-Back Award for backend engineering in the Fuel Application ecosystem."
+    ],
+    "technologies": ["Java", "Spring Boot", "Angular (2+)", "TypeScript", "JavaScript", "HTML5/SCSS", "REST APIs"]
+  },
+  {
+    "id": "silverlake",
+    "role": "Software Engineer",
+    "company": "Silverlake Information System Pvt. Ltd.",
+    "clientProject": "Enterprise Client Dashboards & Hybrid Solutions",
+    "location": "Bangalore, India",
+    "duration": "11/2015 — 11/2018",
+    "startDate": "2015-11",
+    "endDate": "2018-11",
+    "isCurrent": false,
+    "companyUrl": "http://www.silverlake.co.in/",
+    "description": "Designed, executed, and maintained client dashboard platforms and responsive cross-browser internet architectures.",
+    "responsibilities": [
+      "Designed, executed, and maintained client dashboard platforms and responsive cross-browser internet architectures.",
+      "Partnered within iterative development teams to resolve high-priority application bottlenecks and complete sprint deliverables.",
+      "Delivered client solutions for 3M India, Global Knowledge, and corporate training portals."
+    ],
+    "technologies": ["AngularJS", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Core Java", "MySQL", "SQL Server"]
+  }
+]

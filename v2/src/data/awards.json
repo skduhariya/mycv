@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hitachi-pinnacle",
+    "title": "HV Pinnacle Award (Shining Star)",
+    "issuer": "Hitachi Vantara",
+    "period": "2023 — 2024",
+    "description": "Presented for elite delivery metrics, technical innovation, and outstanding contributions to operational unit success in the CSPS Portfolio.",
+    "icon": "sparkles"
+  },
+  {
+    "id": "mavenwave-eagle-citadel",
+    "title": "Eagle Squad Award",
+    "issuer": "Mavenwave Partners",
+    "period": "07/2019 — 09/2019",
+    "description": "Conferred for outstanding project performance, architecture stability, and high-impact sprint completion regarding the Citadel platform.",
+    "icon": "shield"
+  },
+  {
+    "id": "mavenwave-eagle-rhr",
+    "title": "Eagle Squad Award",
+    "issuer": "Mavenwave Partners",
+    "period": "04/2019 — 06/2019",
+    "description": "Presented for milestone excellence, clean delivery, and zero-defect deployment during the rollout of Project RHR.",
+    "icon": "shield"
+  },
+  {
+    "id": "mavenwave-pat-on-back",
+    "title": "Pat-on-the-Back Award",
+    "issuer": "Mavenwave Partners",
+    "period": "12/2018 — 02/2019",
+    "description": "Earned for impactful backend engineering solutions written for the high-throughput Fuel Application ecosystem.",
+    "icon": "check-circle"
+  }
+]

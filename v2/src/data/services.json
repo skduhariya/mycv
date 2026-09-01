@@ -1,0 +1,68 @@
+[
+  {
+    "id": "fullstack-engineering",
+    "title": "Fullstack Web Engineering",
+    "icon": "cpu",
+    "description": "End-to-end development of resilient enterprise platforms combining modern reactive frontends with high-throughput backend services.",
+    "highlights": [
+      "Full lifecycle architecture from database to UI",
+      "Java, Kotlin & Spring Boot microservices",
+      "Type-safe client-server contract integration"
+    ]
+  },
+  {
+    "id": "frontend-architecture",
+    "title": "Frontend Architecture & Design Systems",
+    "icon": "layout",
+    "description": "Building modular, maintainable component systems and scalable SPA architectures with React, Angular, and TypeScript.",
+    "highlights": [
+      "Design tokenization & Figma-to-code pipelines",
+      "Reactive state management (Signals, RxJS, Redux)",
+      "Accessible, mobile-first design system libraries"
+    ]
+  },
+  {
+    "id": "api-microservices",
+    "title": "REST APIs & Backend Integration",
+    "icon": "server",
+    "description": "Designing clean, secure, and well-documented RESTful APIs, authentication guards, and database access layers.",
+    "highlights": [
+      "Spring Boot REST controllers & DAO/Service layers",
+      "Node.js/Express lightweight microservices",
+      "PostgreSQL, MySQL & SQL Server database modeling"
+    ]
+  },
+  {
+    "id": "legacy-modernization",
+    "title": "Legacy Migration & Modernization",
+    "icon": "zap",
+    "description": "Upgrading legacy monolithic codebases (e.g. AngularJS 1.x, jQuery) into modern, high-performance TypeScript & React/Angular tech stacks.",
+    "highlights": [
+      "Zero-downtime progressive migration strategies",
+      "Decoupling tightly coupled legacy controllers",
+      "Modern build tool migration (Webpack/Gulp to Vite)"
+    ]
+  },
+  {
+    "id": "performance-optimization",
+    "title": "Performance Tuning & Web Vitals",
+    "icon": "sparkles",
+    "description": "Auditing and optimizing web performance, memory lifecycles, asset bundling, and Core Web Vitals for instant page loads.",
+    "highlights": [
+      "Bundle size shrinking, code splitting & tree shaking",
+      "Lighthouse 95+ performance optimizations",
+      "Memory leak prevention and rendering speedups"
+    ]
+  },
+  {
+    "id": "technical-leadership",
+    "title": "Technical Leadership & Mentoring",
+    "icon": "shield",
+    "description": "Leading agile delivery sprints, authoring rigorous architectural specifications, and fostering high engineering quality standards.",
+    "highlights": [
+      "Cross-functional communication & client coordination",
+      "Comprehensive code reviews & best practices",
+      "Mentoring engineers and elevating team velocity"
+    ]
+  }
+]
