@@ -6,6 +6,7 @@ import { ProjectItem } from '@/types';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
+import { getAssetUrl } from '@/utils/formatters';
 
 const projectsData = projectsDataRaw as ProjectItem[];
 
@@ -76,11 +77,14 @@ export const ProjectDetailPage: React.FC = () => {
         {/* Hero Image */}
         <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950 mb-8 max-h-96">
           <img
-            src={project.image}
+            src={getAssetUrl(project.image)}
             alt={project.title}
             className="w-full h-full object-cover"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&auto=format&fit=crop&q=80';
+              const target = e.target as HTMLImageElement;
+              if (!target.src.includes('1.jpg')) {
+                target.src = getAssetUrl('images/1.jpg');
+              }
             }}
           />
         </div>

@@ -40,3 +40,18 @@ export function calculateYearsOfExperience(startDateStr: string = '2015-11-01'):
   return `${Math.max(years, 0)}+`;
 }
 
+/**
+ * Resolves static assets cleanly for root and GitHub Pages subpaths
+ */
+export function getAssetUrl(path: string): string {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path;
+  }
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const baseUrl = import.meta.env?.BASE_URL || './';
+  const prefix = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  return `${prefix}${cleanPath}`;
+}
+
+

@@ -5,7 +5,7 @@ import projectsDataRaw from '@/data/projects.json';
 import { ProjectItem } from '@/types';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
-import { cn } from '@/utils/formatters';
+import { cn, getAssetUrl } from '@/utils/formatters';
 
 const projectsData = projectsDataRaw as ProjectItem[];
 
@@ -67,11 +67,14 @@ export const ProjectsPage: React.FC = () => {
               {/* Project Image */}
               <div className="relative h-44 sm:h-48 overflow-hidden bg-slate-950">
                 <img
-                  src={project.image}
+                  src={getAssetUrl(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80';
+                    const target = e.target as HTMLImageElement;
+                    if (!target.src.includes('1.jpg')) {
+                      target.src = getAssetUrl('images/1.jpg');
+                    }
                   }}
                 />
                 <div className="absolute top-3 right-3">

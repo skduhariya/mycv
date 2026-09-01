@@ -4,6 +4,7 @@ import profileDataRaw from '@/data/profile.json';
 import { ProfileData } from '@/types';
 import { DynamicIcon } from '@/utils/iconHelper';
 import { Button } from '@/components/ui/Button';
+import { getAssetUrl } from '@/utils/formatters';
 
 const profileData = profileDataRaw as ProfileData;
 
@@ -14,14 +15,16 @@ export const Sidebar: React.FC = () => {
         {/* Avatar with Status Indicator */}
         <div className="flex flex-col items-center text-center">
           <div className="relative mb-4 group">
-            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-4 ring-slate-100 dark:ring-slate-800 shadow-md">
+            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-4 ring-slate-100 dark:ring-slate-800 shadow-md bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-mono font-bold text-slate-400">
               <img
-                src={profileData.avatarUrl}
+                src={getAssetUrl(profileData.avatarUrl)}
                 alt={profileData.name}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
-                  // Fallback to placeholder if image path needs adjustment
-                  (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80';
+                  const target = e.target as HTMLImageElement;
+                  if (!target.src.includes('mypic.jpg')) {
+                    target.src = getAssetUrl('images/mypic.jpg');
+                  }
                 }}
               />
             </div>
@@ -75,7 +78,7 @@ export const Sidebar: React.FC = () => {
         {/* Download CV CTA */}
         <div className="mt-6">
           <a
-            href={profileData.resumePdf}
+            href={getAssetUrl(profileData.resumePdf)}
             download="Sandeep_Kumar_Resume.pdf"
             target="_blank"
             rel="noreferrer"
