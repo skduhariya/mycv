@@ -1,0 +1,6 @@
+# Ignore source directory leftover in workspace
+v2/
+node_modules/
+.DS_Store
+.cache
+*.log
