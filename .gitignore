@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+*/node_modules
+
+# Production / build artifacts
+dist
+*/dist
+dist-ssr
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & Cache files
+.DS_Store
+.cache
+*.tsbuildinfo
+.env
+.env.*.local
